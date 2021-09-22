@@ -7,7 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-green.min.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="css/style.css">
+
+     <!-- Material Design Lite -->
+     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+     <!-- Material Design icon font -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <script src="js/scripts.js"></script>
+
+     
   <title>MyMind</title>
 </head>
 <body>
@@ -41,8 +50,47 @@
 
     <div class="mdl-layout__content">
       <main>
+        <div class="centralizar">
+          <form action="#">
+             
+              <div class="mdl-textfield mdl-js-textfield">
+                  <input class="mdl-textfield__input" type="text" id="sample1">
+                  <label class="mdl-textfield__label" for="sample1">Nome</label>
+              </div>
+              </form>
+            
+              <form action="#">
+              <div class="mdl-textfield mdl-js-textfield">
+                  <input class="mdl-textfield__input" type="password" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+                  <label class="mdl-textfield__label" for="sample2">Senha</label>
+                  <span class="mdl-textfield__error">Opa, senha inválida, Tente Novamento!</span>
+              </div>
+              </form>
+            
+              <form action= "#">
+                <div> 
+                  <label class="container">Lembrar minha conta
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                  </label>
+                  
+                </div>
+                  <div class="botaoAcessar"> 
+                      <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                          Acessar
+                      </button>
+                  </div>
+                  <div class="botaoCadastrar"> 
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                        Cadastrar-se
+                    </button>
+                </div>
+                  
+
+        </div>
           
       </main>
+  </div>
 
       <footer class="mdl-mini-footer">
         <div class="mdl-mini-footer--left-section">
@@ -56,7 +104,6 @@
       </footer>
     </div>
 
-  </div>
 
 
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
