@@ -12,13 +12,13 @@
     max-height: 35px;
   }
   
-  .mdl-layout_header-row .mdl-navigation_link {
+  .mdl-layout__header-row .mdl-navigation__link  {
     color: #0D2E5C;
     font-weight: bold;
     font-family: Podkova;
   }
   
-  .mdl-layout_header-row .mdl-navigation_link:hover{
+  .mdl-navigation__link:hover{
     color: #60B2FF;
   }
   
@@ -38,14 +38,32 @@
   a{
     text-decoration:none;
   }
+
+  #login{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  
+    
+  }
   
   .centralizar{
     width: fit-content;
     margin: 20px auto;
     padding: 20px;
-    background-color: #77ff706e;
-    border-radius: 2px;
+    background-color: aliceblue;  
+    border-radius: 10px;
     box-shadow: 1px 6px 17px rgb(0 0 0 / 38%);
+    
+    
+
   
   }
 
@@ -73,6 +91,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    margin-right: 5px;
     height: 25px;
     width: 25px;
     background-color: #eee;
@@ -118,3 +137,24 @@
         padding: 5px;
 
       }
+
+#btn-entrar{
+  margin-top: 20px;
+  background-color: #18C29C;
+}
+#btn-cadastrar{
+  margin-top: 20px;
+}
+#btn-cadastrar:hover{
+  background-color: #1f5cb3;
+}
+#btn-entrar:hover{
+  background-color: #12997c;
+}
+#txt-lembrarSenha{
+  color: #0D2E5C;
+    font-weight: bold;
+    font-family: Podkova;
+    font-size: 20px;
+    margin-top: 20px;
+}
