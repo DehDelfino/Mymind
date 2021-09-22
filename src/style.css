@@ -1,0 +1,37 @@
+.content-menu-item{
+  width: auto;
+  max-height: 35px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  
+  
+}
+
+
+.mdl-layout__header-row .mdl-navigation {
+  max-height: 35px;
+}
+
+.mdl-layout__header-row .mdl-navigation__link {
+  color: #0D2E5C;
+  font-weight: bold;
+  font-family: Podkova;
+}
+
+.mdl-layout__header-row .mdl-navigation__link:hover{
+  color: #60B2FF;
+}
+
+@media only screen and (max-width: 600px) {
+  .content-menu-item{
+    display: none;
+  }
+  
+}
+
+@media only screen and (min-width: 601px) {
+  .mdl-layout__drawer-button{
+    display: none;
+  }
+  
+}
