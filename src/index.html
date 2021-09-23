@@ -56,7 +56,7 @@
       
   </div>
 
-      <footer class="mdl-mini-footer">
+      <footer class="mdl-mini-footer mdl-layout--fixed-footer">
         <div class="mdl-mini-footer--left-section">
           <div class="mdl-logo">MyMind</div>
           <ul class="mdl-mini-footer--link-list">
@@ -72,14 +72,16 @@
     
     <div id="login">
       <div class="centralizar" >
-        <form action="#">
+        <span class="txtlogin">Login</span>
+        <form action="POST">
           
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
             <input class="mdl-textfield__input" type="text" id="sample1">
-            <label class="mdl-textfield__label" for="sample1">Nome</label>
+            <label class="mdl-textfield__label" for="sample1">Usuario</label>
           </div>
         </form>
-      
+        
+        <span class="txtlogin">Senha:</span>
         <form action="#">
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
               <input class="mdl-textfield__input" type="password" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
@@ -100,10 +102,20 @@
               Acessar
           </button>
         
-        
+          <a href="#">
           <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="btn-cadastrar">
               Cadastrar-se
           </button>
+          </a>
+
+          <a href="./esquecer.html">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="btn-esquecer">
+              Esqueceu sua senha?
+  
+            </button>
+            
+          </a>
+      
             
                 
 
