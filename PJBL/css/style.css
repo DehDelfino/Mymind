@@ -1,0 +1,21 @@
+p {
+  color: rgba(255, 38, 0, 0.651);
+}
+
+html {
+  background-color: #d0e6fa;
+}
+
+h1 {
+  margin: 0;
+  padding: 16px 0;
+  color: #438dd3;
+  text-shadow: 3px 3px 1px rgb(191, 222, 240);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
+
+html {font-size: 14px; 
+  font-family: Arial, Helvetica, sans-serif;
+  text-align:center;
+}
