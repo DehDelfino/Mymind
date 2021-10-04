@@ -1,0 +1,17 @@
+
+#logo {
+    width:50%;
+    height:50%;
+}
+
+.panel-heading{
+font-size:150%;
+}
+
+#Cancelar{
+background-color:#950020;
+
+}
+#Cadastrar{
+background-color: #100095
+}
