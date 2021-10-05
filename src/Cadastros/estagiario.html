@@ -52,143 +52,151 @@
       <main>
         <form class="form-horizontal">
           <fieldset>
-          <div class="panel panel-primary">
-              <div class="panel-heading">Cadastro de Cliente</div>
-              
-              <div class="panel-body">
-          <div class="form-group">
-        
-          <div class="col-md-11 control-label">
-                  <p class="help-block"><h11>*</h11> Campo Obrigatório </p>
-          </div>
-          </div>
-          
-          <!-- Text input-->
-          <div class="form-group">
-            <label class="col-md-2 control-label" for="Nome">Nome completo <h11>*</h11></label>  
-            <div class="col-md-8">
-            <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
-            </div>
-          </div>
-          
-          <div class="form-group" id="form-group">
-             
-            <label class="col-md-2 control-label" for="Nome">Nascimento</label>  
-            <div class="col-md-2">
-            <input id="dtnasc" name="dtnasc" placeholder="DD/MM/AAAA" class="form-control input-md" required="" type="text" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
-          </div>
-          
-          <!-- Multiple Radios (inline) -->
-          
-            <label class="col-md-1 control-label" for="radios">Sexo <h11>*</h11></label>
-            <div class="col-md-4"> 
-              <label required="" class="radio-inline" for="radios-0" >
-                <input name="sexo" id="sexo" value="feminino" type="radio" required>
-                Feminino
-              </label> 
-              <label class="radio-inline" for="radios-1">
-                <input name="sexo" id="sexo" value="masculino" type="radio">
-                Masculino
-              </label>
-              <label class="radio-inline" for="radios-2">
-                <input name="sexo" id="sexo" value="outro/prefiro não informar" type="radio">
-                Outro/Prefiro não informar
-              </label>
-            </div>
-          </div>
-          
-          <!-- Prepended text-->
-          <div class="form-group">
-            <label class="col-md-2 control-label" for="prependedtext">Telefone <h11>*</h11></label>
-            <div class="col-md-2">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                <input id="prependedtext" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" required="" type="text" maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
-                OnKeyPress="formatar('## #####-####', this)">
-              </div>
-            </div>
+              <div class="panel panel-primary">
+                  <div class="panel-heading">Cadastro de Cliente</div>
+                  
+                  <div class="panel-body">
+              <div class="form-group">
             
+              <div class="col-md-11 control-label">
+                      <p class="help-block"><h11>*</h11> Campo Obrigatório </p>
               </div>
-            </div>
-           </div> 
-          
-          <!-- Prepended text-->
-          <div class="form-group">
-            <label class="col-md-2 control-label" for="prependedtext">Email <h11>*</h11></label>
-            <div class="col-md-5">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                <input id="prependedtext" name="prependedtext" class="form-control" placeholder="email@email.com" required="" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+              
+              
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-2 control-label" for="Nome">Nome completo <h11>*</h11></label>  
+                <div class="col-md-8">
+                <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
+                </div>
               </div>
-            </div>
-          </div>
-          
-          
-          <!-- Search input-->
-          <div class="form-group">
-            <label class="col-md-2 control-label" for="CEP">CPF <h11>*</h11></label>
-            <div class="col-md-2">
-              <input id="cep" name="cep" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
-            </div>
+              
+              <div class="form-group" id="form-group">
+                
+                <label class="col-md-2 control-label" for="Nome">Nascimento</label>  
+                <div class="col-md-2">
+                <input id="dtnasc" name="dtnasc" placeholder="DD/MM/AAAA" class="form-control input-md" required="" type="text" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
+              </div>
+              
+              <!-- Multiple Radios (inline) -->
+              <div class="form-group"></div>
+                <label class="col-md-2 control-label" for="radios">Sexo <h11>*</h11></label>
+                  <div class="col-md-4"> 
+                    <label required="" class="radio-inline" for="radios-0" >
+                      <input name="sexo" id="sexo" value="feminino" type="radio" required>
+                      Feminino
+                    </label> 
+                    <label class="radio-inline" for="radios-1">
+                      <input name="sexo" id="sexo" value="masculino" type="radio">
+                      Masculino
+                    </label>
+                    <label class="radio-inline" for="radios-2">
+                      <input name="sexo" id="sexo" value="outro/prefiro não informar" type="radio">
+                      Outro/Prefiro não informar
+                    </label>
+                  </div>
+                </label>
+              </div>
+              
+              
+              
+              <!-- Prepended text-->
+              <div class="form-group">
+                <label class="col-md-2 control-label" for="prependedtext">Telefone <h11>*</h11></label>
+                <div class="col-md-2">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                    <input id="prependedtext" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" required="" type="text" maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
+                    OnKeyPress="formatar('## #####-####', this)">
+                  </div>
+                </div>
+                
+              </div>
+                
+              
+              <!-- Prepended text-->
+              <div class="form-group">
+                <label class="col-md-2 control-label" for="prependedtext">Email <h11>*</h11></label>
+                <div class="col-md-5">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                    <input id="prependedtext" name="prependedtext" class="form-control" placeholder="email@email.com" required="" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+                  </div>
+                </div>
+              </div>
+              
+              
+              <!-- Search input-->
+              <div class="form-group">
+                <label class="col-md-2 control-label" for="cpf">CPF <h11>*</h11></label>
+                <div class="col-md-2">
+                  <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
+                </div>
+              
 
-          
- 
-          
-          <!-- Select Basic -->
-          <div class="form-group">
-            <label class="col-md-2 control-label" for="Semestre que está cursando">Semestre que está cursando <h11>*</h11></label>
-            <div class="col-md-2">
-              <select required id="Semestre que está cursando" name="Semestre que está cursando" class="form-control">
+              
+    
+              
+              <!-- Select Basic -->
+              <div class="form-group">
+
+                <label class="col-md-2 control-label" for="Semestre que está cursando" >Semestre que está cursando <h11>*</h11>
+                </label>
+
+                <div class="col-md-2">
+                  <select required id="Semestre que está cursando" name="Semestre que está cursando" class="form-control" >
+                      <option value=""></option>
+                    <option value="1º"> 1º Primeiro</option>
+                    <option value="2º"> 2º Segundo</option>
+                    <option value="3º"> 3º Terceiro</option>
+                    <option value="4º"> 4º Quarto</option>
+                    <option value="5º"> 5º Quinto</option>
+                    <option value="6º"> 6º Sexto</option>
+                    <option value="7º"> 7º Setimo</option>
+                    <option value="8º"> 8º Oitavo</option>
+                    <option value="9º"> 9º Nono </option>
+                    <option value="10º">10º Decimo</option>
+                  </select>
+                </div>
+                
+              </div>
+              
+              
+              
+              <!-- Select Basic -->
+              
+                  
+                <label class="col-md-2 control-label" for="selectbasic">Faculdade <h11>*</h11></label>
+                
+                <div class="col-md-3">
+                  <select required id="Faculdade" name="Faculdade" class="form-control">
                   <option value=""></option>
-                <option value="1º"> 1º Primeiro</option>
-                <option value="2º"> 2º Segundo</option>
-                <option value="3º"> 3º Terceiro</option>
-                <option value="4º"> 4º Quarto</option>
-                <option value="5º"> 5º Quinto</option>
-                <option value="6º"> 6º Sexto</option>
-                <option value="7º"> 7º Setimo</option>
-                <option value="8º"> 8º Oitavo</option>
-                <option value="9º"> 9º Nono </option>
-                <option value="10º">10º Decimo</option>
-              </select>
-            </div>
-          </div>
-          
-          
-          <!-- Select Basic -->
-          <div class="form-group">
-              
-            <label class="col-md-2 control-label" for="selectbasic">Faculdade <h11>*</h11></label>
-            
-            <div class="col-md-3">
-              <select required id="Faculdade" name="Faculdade" class="form-control">
-              <option value=""></option>
-                <option value="UFPR">UFPR</option>
-                <option value="PUCPR">PUCPR</option>
-                <option value="UP">UP</option>
-                <option value="Mackeinze">Mackeinze</option>
-                <option value="UFRJ">UFRJ</option>
-                <option value="PUCRS">PUCRS</option>
-                <option value="USP">USP</option>
-              </select>
-            </div>
-          </div>
+                    <option value="UFPR">UFPR</option>
+                    <option value="PUCPR">PUCPR</option>
+                    <option value="UP">UP</option>
+                    <option value="Mackeinze">Mackeinze</option>
+                    <option value="UFRJ">UFRJ</option>
+                    <option value="PUCRS">PUCRS</option>
+                    <option value="USP">USP</option>
+                  </select>
+                </div>
+              </div>
 
-          <div class="form-group">
-              <label class="col-md-2 control-label" for="Nome">Descição <h11>*</h11></label>  
-              <div class="col-md-8">
-              <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
+              <div class="form-group">
+                  <label class="col-md-2 control-label" for="Nome">Descição <h11>*</h11></label>  
+                  <div class="col-md-8">
+                  <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
+                  
+                </div>
+              </div>
               
-            </div>
-           </div>
-           
-            
-            <div class="form-group" id="form-group">
- 
+                
+                <div class="form-group" id="form-group">
+    
           
           </fieldset>
-          </form>
-
+        </form>
+        
         
           
       </main>
