@@ -1,4 +1,5 @@
-const usuarios = []
+const usuariosA = []
+const usuariosB = []
 
 
 function cadastrar(){
@@ -7,7 +8,7 @@ function cadastrar(){
 
   const $nomeCompletoValue = document.getElementById("nomeCompleto").value
   const $dataNascimentoValue = document.getElementById("dtnasc").value
-  const $sexoValue = document.querySelector("input[name='sexo']:checked").value
+  // const $sexoValue = document.querySelector("input[name='sexo']:checked").value
   const $telefoneValue = document.getElementById("prependedtext").value
   const $emailValue = document.getElementById("email").value
   const $cpfValue = document.getElementById("cpf").value
@@ -21,7 +22,7 @@ function cadastrar(){
   const usuario = {
     nome:$nomeCompletoValue,
     data:$dataNascimentoValue,
-    sexo:$sexoValue,
+    // sexo:$sexoValue,
     telefone:$telefoneValue,
     email: $emailValue,
     cpf: $cpfValue,
@@ -30,18 +31,25 @@ function cadastrar(){
     descricao: $descricaoValue
   }
 
+  
   console.log(usuario)
+
+  usuariosB.push(usuario)
+
+  const usuarios = [...usuariosA, ...usuariosB]
   
 
+ window.localStorage.setItem("usuarios",JSON.stringify(usuarios))
 
-  console.log("funfou o botão")
- 
-  usuarios.push(usuario)
- 
-
-
+ console.log(`testando nome: ${$nomeCompletoValue}`)
+ console.log("chegou aqui")
 
   
 }
 
-window.localStorage.setItem("usuarios",JSON.stringify(usuarios))
+
+const $buttonCadastrar = document.getElementById('btn-cadastrar')
+
+$buttonCadastrar.addEventListener("click", ()=>cadastrar())
+
+
