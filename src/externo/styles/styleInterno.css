@@ -177,3 +177,10 @@
   font-size: 20px;
   
 }
+
+.ImagemBulboPerfil{
+  background-color: rgba(180, 92, 92, 0);
+  background-image: url("../../../assets/BulboPerfil.jpg");
+  width: 200px;
+  height: 200px;
+}
