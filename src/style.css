@@ -1,4 +1,6 @@
-
+main{
+  margin-top: 20px;
+}
 .content-menu-item{
     width: auto;
     max-height: 35px;
@@ -51,6 +53,7 @@
     align-items: center;
     justify-content: center;
     z-index: 1000;
+
   
     
   }
@@ -64,9 +67,23 @@
     box-shadow: 1px 6px 17px rgb(0 0 0 / 38%);
     margin-top: 50px;
     
-    
-
   
+  }
+  .container-login{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .container-login .close-button{
+    height: 25px;
+    width: 25px;
+    margin-left: 50px;
+  }
+
+
+  .container-login .close-button:hover{
+    background-color: rgba(0, 0, 0, 0.509);
   }
 
   .container {
@@ -146,7 +163,7 @@
   background-color: #18C29C;
 }
 #btn-cadastrar{
-  margin-top: 20px;
+  margin: 20px;
 }
 #btn-esquecer{
   margin-top: 20px;

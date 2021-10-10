@@ -1,5 +1,5 @@
 const usuariosA = []
-const usuariosB = []
+const novoUsuario = []
 
 
 function cadastrar(){
@@ -32,17 +32,15 @@ function cadastrar(){
   }
 
   
-  console.log(usuario)
 
-  usuariosB.push(usuario)
 
-  const usuarios = [...usuariosA, ...usuariosB]
+  novoUsuario.push(usuario)
+
+  const usuarios = [...usuariosA, ...novoUsuario]
   
 
  window.localStorage.setItem("usuarios",JSON.stringify(usuarios))
 
- console.log(`testando nome: ${$nomeCompletoValue}`)
- console.log("chegou aqui")
 
   
 }
