@@ -1,8 +1,10 @@
+const $entrar = document.getElementById("entrar")
 const $modalLogin = document.getElementById('login')
 const $closeButton = document.getElementById('close-button')
 
-const opneModal = ()=>{
+const openModal = ()=>{
   $modalLogin.style.display ="flex"
+ 
 }
 
 const closeModal = ()=>{
@@ -11,3 +13,4 @@ const closeModal = ()=>{
 
 
 $closeButton.addEventListener('click',()=> closeModal())
+$entrar.addEventListener('click', ()=> openModal())
