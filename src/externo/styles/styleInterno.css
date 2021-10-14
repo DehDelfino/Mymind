@@ -181,6 +181,30 @@
 .ImagemBulboPerfil{
   background-color: rgba(180, 92, 92, 0);
   background-image: url("../../../assets/BulboPerfil.jpg");
-  width: 200px;
-  height: 200px;
+  background-size: contain ;
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 160px;
+
+  
+}
+
+
+.ImagemCadeado{
+  background-image: url("../../../assets/cadeado (2).png");
+  background-size: contain ;
+  background-repeat: no-repeat;
+  background-color: rgba(34, 34, 34, 0);
+  width: 100px;
+  height: 50px;
+  margin:0;
+  padding:0;
+  border:0;
+  
+}
+
+.DisplayFlezFormulario{
+  display: flex;
+  align-items:center;
+  justify-content: center;
 }
