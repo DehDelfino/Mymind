@@ -14,7 +14,7 @@
   
 }
 
-.centralizar{
+/* .centralizar{
   width: fit-content;
   margin: 20px auto;
   padding: 20px;
@@ -27,7 +27,7 @@
   
   
 
-}
+} */
 .container-login{
   display: flex;
   align-items: center;

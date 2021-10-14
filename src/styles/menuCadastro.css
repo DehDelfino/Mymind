@@ -1,4 +1,8 @@
 .menu-cadastro{
   display: flex;
   flex-direction: column;
+  
+}
+.opcao-cadastro{
+  margin: 20px;
 }
