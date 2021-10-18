@@ -92,7 +92,7 @@
                     <div class="col-md-2">
                       <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                        <input id="prependedtext" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" required="" type="text" maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
+                        <input id="telefone" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" required="" type="text" maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
                         OnKeyPress="formatar('## #####-####', this)">
                       </div>
                     </div>
@@ -116,7 +116,7 @@
                   <div class="form-group">
                     <label class="col-md-2 control-label" for="cpf">CNPJ <h11>*</h11></label>
                     <div class="col-md-2">
-                      <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="11" pattern="[0-9]+$" OnKeyPress="formatar('###.###.###-##', this)">
+                      <input id="cnpj" name="cnpj" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="11" pattern="[0-9]+$" OnKeyPress="formatar('###.###.###-##', this)">
                     </div>
                   </div>                  
 
@@ -128,7 +128,7 @@
                     <label class="col-md-2 control-label" for="selectbasic"> Tipo de Instituição <h11>*</h11></label>
                     
                     <div class="col-md-3">
-                      <select required id="Tipo de Instituição" name="Tipo de Instituição" class="form-control">
+                      <select required id="tipodeInstituição" name="Tipo de Instituição" class="form-control">
                       <option value=""></option>
                         <option value="Privada">Privada</option>
                         <option value="Pública">Pública</option>
@@ -139,16 +139,6 @@
                   </div>
 
 
-                  <div class="form-group">
-                    <label class="col-md-2 control-label" for="Nome">Usuario <h11>*</h11></label>  
-                    
-                    <div class="col-md-2">
-                      <input id="descricao" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
-                    </div>
-
-                    
-                   
-                  </div>
 
 
                   

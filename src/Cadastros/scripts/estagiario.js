@@ -16,7 +16,8 @@ function cadastrar(){
   const $periodoCursoValue = $periodoCurso.options[$periodoCurso.selectedIndex].text
   const $faculdade = document.getElementById("Faculdade")
   const $faculdadeValue = $faculdade.options[$faculdade.selectedIndex].text
-  const $descricaoValue = document.getElementById("descricao").value
+  const $cnpjValue = document.getElementById("cnpj").value
+  
   
 
   const usuario = {
