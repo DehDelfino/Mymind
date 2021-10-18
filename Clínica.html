@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Material Design -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-green.min.css" />
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>    
+  
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../styles/modal.css">
+  
+
+     
+  <title>MyMind</title>
+</head>
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">MyMind</span>
+          <div class="mdl-layout-spacer"></div>
+          <div class="content-menu-item">
+            <nav class="mdl-navigation">
+              <a href="#" class="mdl-navigation__link" id="entrar">Login</a>
+              <a href="#" class="mdl-navigation__link">Cadastrar</a>
+              <a href="#" class="mdl-navigation__link">Sobre</a>
+              <a href="#" class="mdl-navigation__link">Idealizadores</a>
+              
+    
+            </nav>
+          </div>
+          
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">MyMind</span>
+        <nav class="mdl-navigation">
+          <a href="#" class="mdl-navigation__link">Login</a>
+          <a href="#" class="mdl-navigation__link">Cadastrar</a>
+          <a href="#" class="mdl-navigation__link">Sobre</a>
+          <a href="#" class="mdl-navigation__link">Idealizadores</a>
+        </nav>
+    </div>
+    
+
+    
+
+      <main >
+        <div class = "container-fluid">
+
+            <form class="form-horizontal" >
+              <fieldset>
+
+                  <div class="panel panel-primary">
+                      <div class="panel-heading">Cadastro de Clínica</div>
+                      
+                      <div class="panel-body">
+                  <div class="form-group">
+                
+                  <div class="col-md-11 control-label">
+                          <p class="help-block"><h11>*</h11> Campo Obrigatório </p>
+                  </div>
+
+                  
+                  
+                  <!-- Text input-->
+                  <div class="form-group">
+                    <label class="col-md-2 control-label" for="Nome">Nome da Clínica Completo <h11>*</h11></label>  
+                    <div class="col-md-8">
+                    <input id="nomeCompleto" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
+                    </div>
+                  </div>
+                  
+                  <div class="form-group" id="form-group">
+                    
+                    <label class="col-md-2 control-label" for="Nome"> Data de Fundação</label>  
+                    <div class="col-md-2">
+                    <input id="dtnasc" name="dtnasc" placeholder="DD/MM/AAAA" class="form-control input-md" required="" type="text" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
+                  </div>
+                  
+                  
+                  <!-- Prepended text-->
+                  <div class="form-group">
+                    <label class="col-md-2 control-label" for="prependedtext">Telefone <h11>*</h11></label>
+                    <div class="col-md-2">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                        <input id="prependedtext" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" required="" type="text" maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
+                        OnKeyPress="formatar('## #####-####', this)">
+                      </div>
+                    </div>
+                    
+                  </div>
+                    
+                  
+                  <!-- Prepended text-->
+                  <div class="form-group">
+                    <label class="col-md-2 control-label" for="prependedtext">Email <h11>*</h11></label>
+                    <div class="col-md-5">
+                      <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <input id="email" name="prependedtext" class="form-control" placeholder="email@email.com" required="" type="text"  >
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                  <!-- Search input-->
+                  <div class="form-group">
+                    <label class="col-md-2 control-label" for="cpf">CNPJ <h11>*</h11></label>
+                    <div class="col-md-2">
+                      <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="11" pattern="[0-9]+$" OnKeyPress="formatar('###.###.###-##', this)">
+                    </div>
+                  </div>                  
+
+                  
+                  <!-- Select Basic -->
+                  
+                  <div class="form-group">
+                      
+                    <label class="col-md-2 control-label" for="selectbasic"> Tipo de Instituição <h11>*</h11></label>
+                    
+                    <div class="col-md-3">
+                      <select required id="Tipo de Instituição" name="Tipo de Instituição" class="form-control">
+                      <option value=""></option>
+                        <option value="Privada">Privada</option>
+                        <option value="Pública">Pública</option>
+                        <option value="Privada com ajuda governamental">Privada com ajuda governamental</option>
+                        <option value="Pública com auxílio privado">Pública com auxílio privado</option>
+                      </select>
+                    </div>
+                  </div>
+
+
+                  <div class="form-group">
+                    <label class="col-md-2 control-label" for="Nome">Usuario <h11>*</h11></label>  
+                    
+                    <div class="col-md-2">
+                      <input id="descricao" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
+                    </div>
+
+                    
+                   
+                  </div>
+
+
+                  
+
+                  
+
+                  <div class="form-group">
+                    <label class="col-md-2 control-label" for="Nome">Senha <h11>*</h11></label>  
+
+                    <div class="col-md-2">
+                      <input id="descricao" name="Nome" placeholder="" class="form-control input-md" required="" type="password">
+                    </div>
+
+                    <label class="col-md-2 control-label" for="Nome">Confirmar Senha <h11>*</h11></label> 
+
+                    <div class="col-md-2">
+                     <input id="descricao" name="Nome" placeholder="" class="form-control input-md" required="" type="password">
+                    </div>
+
+                   
+                  </div>
+
+
+                 
+                  
+                
+                 
+                  
+                </form>
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+                id="btn-cadastrar"  >
+             Cadastrar-se
+             </button>
+                
+          </div>
+          
+
+          
+         
+      </main>
+
+
+
+      
+
+      
+  
+
+      <footer class="mdl-mini-footer mdl-layout--fixed-footer">
+        <div class="mdl-mini-footer--left-section">
+          <div class="mdl-logo">MyMind</div>
+          <ul class="mdl-mini-footer--link-list">
+            <li ><a href="#"> link</a> </li>
+            <li><a href="#">link</a> </li>
+          </ul>
+          
+        </div>
+      </footer>
+    </div>
+
+
+
+
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script type="module" src="./scripts/estagiario.js"></script>
+  <script src="../index.js" ></script>
+</body>
+</html>
