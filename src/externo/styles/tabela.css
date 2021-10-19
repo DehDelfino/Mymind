@@ -1,0 +1,15 @@
+.Centralizaçao{
+       
+  display: grid;
+  place-items: center;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(123, 233, 169, 0.74);
+  border-radius: 5px;
+  box-shadow: 1px 6px 17px rgb(0 0 0 / 38%);
+  
+
+
+  
+}

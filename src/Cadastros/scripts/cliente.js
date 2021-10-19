@@ -8,17 +8,17 @@ function cadastrar(){
 
   const $nomeCompletoValue = document.getElementById("nomeCompleto").value
   const $dataNascimentoValue = document.getElementById("dtnasc").value
+  const $sexoValue = document.getElementById("sexo").value
   // const $sexoValue = document.querySelector("input[name='sexo']:checked").value
-  const $telefoneValue = document.getElementById("prependedtext").value
+  const $telefoneValue = document.getElementById("telefone").value
   const $emailValue = document.getElementById("email").value
   const $cpfValue = document.getElementById("cpf").value
-  const $periodoCurso = document.getElementById("curso")
-  const $periodoCursoValue = $periodoCurso.options[$periodoCurso.selectedIndex].text
-  const $faculdade = document.getElementById("Faculdade")
-  const $faculdadeValue = $faculdade.options[$faculdade.selectedIndex].text
-  const $cnpjValue = document.getElementById("cnpj").value
-  
-  
+  const $tempoValue = document.getElementById("tempo")[$tempoValue.selectedIndex].text
+  const $comoNosConheceuValue = document.getElementById(" comoNosConheceu")[$comoNosConheceuValue.selectedIndex].text
+  const $userValue = document.getElementById("user")[$userValue.selectedIndex].text
+ 
+ 
+ 
 
   const usuario = {
     nome:$nomeCompletoValue,
@@ -27,9 +27,10 @@ function cadastrar(){
     telefone:$telefoneValue,
     email: $emailValue,
     cpf: $cpfValue,
-    periodo_do_curso: $periodoCursoValue,
-    universidade: $faculdadeValue,
-    descricao: $descricaoValue
+    tempo: $tempoValue,
+    ComoNosConheceu: $comoNosConheceuValue,
+    user = $userValue,
+
   }
 
   
