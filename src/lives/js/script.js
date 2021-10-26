@@ -1,5 +1,5 @@
 function startVideoFromCamera(){
-    const specs = {video: {width: 1080, aspectRatio: 21/9}}
+    const specs = {video: {width: 1000, aspectRatio: 21/9}}
 
     navigator.mediaDevices.getUserMedia(specs).then(stream=>{
 
