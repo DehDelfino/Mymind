@@ -1,0 +1,39 @@
+.div-card{
+    width:1250px;
+    height: 600px;
+    background-color: rgb(82, 137, 201);
+    margin:5px;
+    border-radius: 3px;
+}
+
+.div-card-dados{
+
+    width:1000px;
+    height: 550px;
+    background-color: rgb(130, 162, 199);
+    margin: 10px;
+    border-top: 10px;
+
+
+}
+
+.camera{
+    width:1000px;
+    height: 300px;
+    margin: 10px;
+
+
+}
+
+.live{
+    border: center;
+}
+
+#botaoChamada{ 
+    width:10px;
+    height: 50px;
+    margin-top:1000px;
+    left: 200px;
+    background-image: url("../../../assets/CameraLigada.png");
+
+}
