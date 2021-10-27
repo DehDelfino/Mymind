@@ -72,7 +72,7 @@
 
 .chat{
     width:150px;
-    height: 120px;
+    height: 90px;
 
     border-radius: 3px;
     display: flex;
@@ -130,3 +130,26 @@
     float: left;
     color: #999;
   }
+
+.inserirMensagem{
+    width: 110px;
+    
+}
+
+.inserTexto{
+    background-color: white;
+    display: flex;
+    border: 3px solid #555;
+    width: 100%;
+
+}
+.enviar{
+    background-color: white;
+    border: 3px solid #555;
+    width: 100%;
+
+}
+
+.enviar:hover{
+    background-color:rgb(104, 144, 253);
+}
