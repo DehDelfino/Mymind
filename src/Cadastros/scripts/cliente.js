@@ -6,30 +6,17 @@ const novoUsuario = [] //array que armazenrara provisoriamente os dados do usuar
 
 
 
-function validacaoSenha ( senha, confSenha){
 
-  console.log("aeeee")
-  // const  senhasCorretas = senha === confSenha ? true : false
-
-  if( senha === confSenha){
-    return true
-  }
-
- 
-  else{
-
-    return false
-  }
-}
 
 function validacaoUsuario (usuario){
+
+ 
   const usuariosA = JSON.parse(localStorage.getItem("usuarios"))
 
-  usuariosA.map((usuario)=> usuario===usuario.user)
+  const usuarioExistente = usuariosA.map((usuarios)=> usuarios.user === usuario)
 
-  const usuarioExiste = usuariosA ? true :  false
-
-  return usuarioExiste
+ 
+ return usuarioExistente
   
 
 }
@@ -50,79 +37,112 @@ function cadastrar(){
   const $tempoValue = $tempo.options[$tempo.selectedIndex].text
   const $comoNosConheceu = document.getElementById("comoNosConheceu")
   const $comoNosConheceuValue = $comoNosConheceu.options[$comoNosConheceu.selectedIndex].text
-  const $userValue = document.getElementById("user").value
+  const $user = document.getElementById("user")
   const $senha = document.getElementById("senha").value
-  const $senhaConfirmacao = document.getElementById("confSenha").value
+  // const $senhaConfirmacao = document.getElementById("confSenha").value
 
-
-  const validacaoSenha = validacaoSenha ( $senha, $senhaConfirmacao)
-  
-  
-  const usuarioExiste = validacaoUsuario($userValue)
 
   
   
   
-  if (validacaoSenha && !usuarioExiste){
+  
 
-
-    const dadosUsuario =
-    {
-      nome:$nomeCompletoValue,
-      data:$dataNascimentoValue,
-      telefone:$telefoneValue,
-      email: $emailValue,
-      cpf: $cpfValue,
-      acompanhamento_psicológico: $tempoValue,
-      ComoNosConheceu: $comoNosConheceuValue,
-      user: $userValue,
-      password: $senha, 
-
-    }
-
-    novoUsuario.push(dadosUsuario)
-
-    const usuariosA = JSON.parse(localStorage.getItem("usuarios"))
+  
     
+  const dadosUsuario =
+  {
+    nome:$nomeCompletoValue,
+    data:$dataNascimentoValue,
+    telefone:$telefoneValue,
+    email: $emailValue,
+    cpf: $cpfValue,
+    acompanhamento_psicológico: $tempoValue,
+    ComoNosConheceu: $comoNosConheceuValue,
+    user: $user.value,
+    password: $senha, 
 
-    const usuarios = [...usuariosA, ...novoUsuario]
+  }
+
+  novoUsuario.push(dadosUsuario)
+
+  const usuariosA = JSON.parse(localStorage.getItem("usuarios"))
+  
+
+  const usuarios = [...usuariosA, ...novoUsuario]
     
     
-
+  
     window.localStorage.setItem("usuarios",JSON.stringify(usuarios))
 
+  
+  
+  
+ 
+
+
+
 
  
  
 
-  }
-  else{
-    window.alert("error")
-  }
+  
+  
 
   
 }
 
-
+//botão cadastrar
 const $buttonCadastrar = document.getElementById('btn-cadastrar')
 
 $buttonCadastrar.addEventListener("click", ()=>cadastrar())
+
+
+// confirmação de senha
 
 const $btnConfirmarSenha = document.getElementById("confSenha")
 
 $btnConfirmarSenha.addEventListener('blur',()=>{
 
-
+ 
   const $senha = document.getElementById("senha").value
 
   const $senhaConfirmacao = document.getElementById("confSenha").value
   
   if($senha === $senhaConfirmacao ){
     $btnConfirmarSenha.style.borderColor = ''
-    console.log('inferno!')
+    document.getElementById('btn-cadastrar').disabled = false
   }
   else{
     $btnConfirmarSenha.style.borderColor = 'red'
-    console.log('socorro')
+    document.getElementById('btn-cadastrar').disabled = true
   }
+})
+
+
+//verificação de usuario cadastrado
+const $user = document.getElementById("user")
+
+$user.addEventListener('blur',()=>{
+  
+  const inputUsuario = $user.value
+
+  console.log(inputUsuario)
+  const usuariosA = JSON.parse(localStorage.getItem("usuarios"))
+  
+
+  const usuarioExistente = usuariosA.findIndex(({user})=> user == inputUsuario )
+  console.log(usuarioExistente)
+
+  if(usuarioExistente >= 0){
+    $user.style.borderColor = "red" //muda a borda para vermelho
+    document.getElementById('btn-cadastrar').disabled=true //desabilita o botão de cadastro
+  }
+  //retorna ao normal
+  else{
+    $user.style.borderColor = ""
+    document.getElementById('btn-cadastrar').disabled=false
+  }
+
+  
+
 })
