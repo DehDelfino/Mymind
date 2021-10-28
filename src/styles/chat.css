@@ -46,3 +46,21 @@
     float: left;
     color: #999;
   }
+
+.container{
+  display: flex;
+}
+.chat{
+  
+  flex:2;
+  
+}
+.contatos{
+  
+  flex:1;
+  width: 100px;
+  
+}
+.teste{
+  width: 200px;
+}
