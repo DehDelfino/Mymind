@@ -3,9 +3,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: scroll;
+    width: 1300px;
   }
   
 .card {
+  
     
     border-radius: 15px;
     box-shadow: 20px 10px 20px 2px rgb(50 50 50 / 50%);
@@ -22,8 +25,9 @@
   }
    
   .card p {
-    color: #a3a5ae;
+    color: #7a7a83;
     font-size: 16px;
+    padding: 10px;
     
   }
    
@@ -51,7 +55,10 @@
     height: 100%;
     
   }
-  @media only screen and (max-width:768px) {
+  #footer{
+    display: none;
+  }
+@media only screen and (max-width:768px) {
     body{
       top:100rem;
     }
@@ -98,4 +105,4 @@
     }
     
     }
-    
+  
