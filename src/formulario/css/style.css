@@ -1,0 +1,61 @@
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+   
+}
+
+.flex > div{
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+img:hover{ 
+    filter: saturate(200%);
+
+}
+
+.botao{
+    font-size: 2em;
+    background: #3498db;
+    color: #fff;
+    border: 0.25rem solid #3498db;
+    padding: 0.85em 0.75em;
+    margin: 1rem;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  
+}
+
+
+.botao:hover{
+
+    background-color: rgb(47, 154, 248);
+}
+
+.botoes{
+    display: flex;
+    margin-left: 55%;
+}
+
+p{
+    font-family: fantasy;
+    color: rgb(0, 21, 255);
+    font-size: 40px;
+}
+
+p:hover{
+    color: rgb(38, 208, 255);
+}
