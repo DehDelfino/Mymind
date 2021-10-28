@@ -1,0 +1,51 @@
+body{
+    margin:0px;
+}
+.div-pagina{
+    width: 90%;
+    height: 90%;
+    background-color:red;
+}
+
+.div-buscar{
+    margin: 15px;
+}
+
+.div-cardArtigo{
+
+    width: 300px;
+    height: 600px;
+    background-color:rgb(68, 68, 255);
+    margin: 15px;
+    border-radius:10px;
+}
+
+.div-cardTexto{
+    width: 100%;
+    height: 240px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.titulo{
+    font-size: 22px;
+    font-style:italic;
+    margin: 5px;
+}
+
+.breveTexto{
+    font-size: 15px;
+    margin: 15px;
+    text-align: center;
+
+}
+
+.div-cardLerMais{
+    text-align: center;
+    font-weight: bold;
+    background-color:rgb(118, 225, 255);
+}
+
+.div-cardLerMais:hover{
+    background-color:rgb(197, 240, 251);
+}

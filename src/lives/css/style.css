@@ -1,16 +1,17 @@
 .div-card{
+    float: left;
     width:1250px;
     height: 600px;
     background-color: rgb(82, 137, 201);
     margin:5px;
     border-radius: 3px;
+    display: flex;
 }
 
 .div-card-dados{
-
     width:1000px;
-    height: 550px;
-    background-color: rgb(130, 162, 199);
+    height: 570px;
+    background-color: white;
     margin: 10px;
     border-top: 10px;
 
@@ -18,9 +19,11 @@
 }
 
 .camera{
-    width:1000px;
+    
     height: 300px;
     margin: 10px;
+    max-width: 600px;
+   
 
 
 }
@@ -29,11 +32,124 @@
     border: center;
 }
 
-#botaoChamada{ 
-    width:10px;
-    height: 50px;
-    margin-top:1000px;
-    left: 200px;
-    background-image: url("../../../assets/CameraLigada.png");
+#botaoChamada{
+    width: 130px;
+    height: 130px;
+     margin-left: 25%;
+    background-image: url("../../../assets/CameraDesligada1.png");
+ 
+}
 
+#botaoChamada:hover{ 
+   
+    background-color: white;
+    background-image: url("../../../assets/CameraLigada1.png");
+    
+}
+
+#botaoMicrofone{
+    margin-left: 0%;
+    width: 130px;
+    height: 130px;
+    background-color: white;
+    background-image: url("../../../assets/microfoneDesligado.png");
+
+ 
+}
+
+#botaoMicrofone:hover{ 
+   
+    background-color: white;
+    background-image: url("../../../assets/microfoneLigado.png");
+    
+}
+
+.card{
+    display: flex;
+
+   
+}
+
+.chat{
+    width:150px;
+    height: 90px;
+
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Chat containers */
+.container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    float: left;
+  }
+  
+  /* Darker chat container */
+  .darker {
+    border-color: #ccc;
+    background-color: #ddd;
+  }
+  
+  /* Clear floats */
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Style images */
+  .container img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  /* Style the right image */
+  .container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+  }
+  
+  /* Style time text */
+  .time-right {
+    float: right;
+    color: #aaa;
+  }
+  
+  /* Style time text */
+  .time-left {
+    float: left;
+    color: #999;
+  }
+
+.inserirMensagem{
+    width: 110px;
+    
+}
+
+.inserTexto{
+    background-color: white;
+    display: flex;
+    border: 3px solid #555;
+    width: 100%;
+
+}
+.enviar{
+    background-color: white;
+    border: 3px solid #555;
+    width: 100%;
+
+}
+
+.enviar:hover{
+    background-color:rgb(104, 144, 253);
 }
