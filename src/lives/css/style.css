@@ -1,3 +1,4 @@
+
 .div-card{
     float: left;
     width:1250px;
@@ -6,6 +7,8 @@
     margin:5px;
     border-radius: 3px;
     display: flex;
+    height: 800px;
+    padding: 20px;
 }
 
 .div-card-dados{
@@ -23,6 +26,7 @@
     height: 300px;
     margin: 10px;
     max-width: 600px;
+    
    
 
 
@@ -66,17 +70,20 @@
 
 .card{
     display: flex;
+    
 
    
 }
 
 .chat{
+    display: flex;
     width:150px;
     height: 90px;
 
     border-radius: 3px;
     display: flex;
     flex-direction: column;
+   
 
 }
 
@@ -152,4 +159,12 @@
 
 .enviar:hover{
     background-color:rgb(104, 144, 253);
+}
+
+
+/* =============================================== */
+
+.container-chat{
+    background-color: #999;
+    flex:2
 }
