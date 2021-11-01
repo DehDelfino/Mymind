@@ -1,55 +1,51 @@
-@media screen and (min-width: 900px){
-    #busarPsico{
-        background-repeat: no-repeat;
-        position: relative;
-        width: 85%;
-        height: 610px;
-        margin-left: auto;
-        margin-right: auto;
+#imagemMapa{
     
-    
-        background-image: url("../../../../assets/buscarPsico.png");
-    }
-}
- 
+    background-repeat: no-repeat;
+    position: relative;
+    width: 85%;
+    height: 610px;
+    margin-left: auto;
+    margin-right: auto;
 
-@media screen and (min-width: 600px) and (max-width: 900px) {
-    #busarPsico{
- 
- 
-        width: 100%;
-        height: 150px;
 
-    
-        background-image: url("../../../../assets/buscarPsicoH.png");
-    }
+    background-image: url("../../../../assets/mapa.png");
+
 }
 
+#imagemBulbo{
+    text-align: center;
+    top: 500px;
+ 
+    line-height: 30px;
+  
+    left: 25%;
+}
 
 #buscarCidade{
       position: absolute;
     background-color: rgba(0,0,0,0.5);
     color:#fff;
-    text-align: center;
-    top: 100px;
-    width: 250px;
-    line-height: 30px;
+    
+    top: 500px;
+   
+
     height: 30px;
-    left: 25%;
+    left: 15%;
     }
 
 #buscarBtn{
     position: absolute;
   
-    
-    text-align: center;
-    top: 100px;
-    width: 200px;
+    left:15%;
+
+    top: 540px;
+  ;
     line-height: 35px;
     height: 30px;
-    left: 25%;
+ 
 
 }
+
 
 .modal {
     display: none; /* Hidden by default */
@@ -88,5 +84,6 @@
     cursor: pointer;
   }
 
-
-  
+#txtBuscar{
+    font-weight: bold;
+}

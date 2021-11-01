@@ -42,64 +42,69 @@ i<!DOCTYPE html>
           <a href="#" class="mdl-navigation__link">.</a>
         </nav>
     </div>
-    
+  <div class="mdl-layout__content"></div>
 
     
 
-    <div class="mdl-layout__content">
-      <main>
-            <div id ="busarPsico">
-                <div>
-                     <input id ="buscarCidade" placeholder="Digite sua Cidade/Região"></input>
-                     <li><button id="buscarBtn">Buscar psicologo <img src="../../../assets/lupa.jpg" height="20px"> </img> "</button></li>
-                </div>>
-            </div>
-               
 
-            <div id="myModal" class="modal">
-
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                        <form id="tabela">
-                            <table border="1">
-                                <tr>
-                                    <td>Profissional</td>
-                                    <td>Tipo de Vaga</td>
-                                    <td>Converse com:</td>
-                                </tr>
-                                <tr>
-                                    <td>Ted</td>
-                                    <td>-</td>
-                                    <li> <td>Chat</td></li>
-                                </tr>
-                                <tr>
-                                    <td>Ralf</td>
-                                    <td>Valor social</td>
-                                    <li> <td>Chat</td></li>
-                                </tr>
-                            </table>
-                        </form>
-                </div>
-            </div>
-        
+  <main>
+          <div id="imagemMapa">
+            <img src="../../../assets/bulbo.png" id="imagemBulbo">
+            <span class="mdl-layout-title" id="txtBuscar">OPA! VOCÊ NÃO TEM NENHUM PROFISSIONAL CADASTRADO! <BR>  VAMOS ENCONTRAR UM PSICOLOGO PARA VOCÊ</span>
+          </div>
           
-      </main>
+
+          <div >
+              <input id ="buscarCidade" placeholder="Digite sua Cidade/Região"></input>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="buscarBtn">BUSCAR</button>
+          </div>>
+        
+            
+
+          <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                  <span class="close">&times;</span>
+                      <form id="tabela">
+                          <table border="1">
+                              <tr>
+                                  <td>Profissional</td>
+                                  <td>Tipo de Vaga</td>
+                                  <td>Converse com:</td>
+                              </tr>
+                              <tr>
+                                  <td>Ted</td>
+                                  <td>-</td>
+                                  <li> <td>Chat</td></li>
+                              </tr>
+                              <tr>
+                                  <td>Ralf</td>
+                                  <td>Valor social</td>
+                                  <li> <td>Chat</td></li>
+                              </tr>
+                          </table>
+                      </form>
+              </div>
+          </div>
+      
+        
+</main>
 
       
-  </div>
 
-      <footer class="mdl-mini-footer mdl-layout--fixed-footer">
-        <div class="mdl-mini-footer--left-section">
-          <div class="mdl-logo">MyMind</div>
-          <ul class="mdl-mini-footer--link-list">
-            <li ><a href="#"> link</a> </li>
-            <li><a href="#">link</a> </li>
-          </ul>
-          
-        </div>
-      </footer>
-    </div>
+
+<footer class="mdl-mini-footer mdl-layout--fixed-footer">
+  <div class="mdl-mini-footer--left-section">
+    <div class="mdl-logo">MyMind</div>
+    <ul class="mdl-mini-footer--link-list">
+      <li ><a href="#"> link</a> </li>
+      <li><a href="#">link</a> </li>
+    </ul>
+    
+  </div>
+</footer>
+</div>
 
     <!-- MODAL -->
  
