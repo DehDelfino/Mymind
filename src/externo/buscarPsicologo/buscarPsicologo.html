@@ -51,10 +51,36 @@ i<!DOCTYPE html>
             <div id ="busarPsico">
                 <div>
                      <input id ="buscarCidade" placeholder="Digite sua Cidade/Região"></input>
-                     <button>Buscar psicologo <img src="../../../assets/lupa.jpg" height="20px"> </img> "</button>
+                     <li><button id="buscarBtn">Buscar psicologo <img src="../../../assets/lupa.jpg" height="20px"> </img> "</button></li>
                 </div>>
+            </div>
                
 
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                        <form id="tabela">
+                            <table border="1">
+                                <tr>
+                                    <td>Profissional</td>
+                                    <td>Tipo de Vaga</td>
+                                    <td>Converse com:</td>
+                                </tr>
+                                <tr>
+                                    <td>Ted</td>
+                                    <td>-</td>
+                                    <li> <td>Chat</td></li>
+                                </tr>
+                                <tr>
+                                    <td>Ralf</td>
+                                    <td>Valor social</td>
+                                    <li> <td>Chat</td></li>
+                                </tr>
+                            </table>
+                        </form>
+                </div>
             </div>
         
           
@@ -79,8 +105,32 @@ i<!DOCTYPE html>
  
    
     </div>
+      
+<script>
 
+    var modal = document.getElementById("myModal");
+    
+    var btn = document.getElementById("buscarBtn");
+    
+    var span = document.getElementsByClassName("close")[0];
+    
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
 
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+
 </body>
 </html>
