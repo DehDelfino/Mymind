@@ -11,7 +11,7 @@ function montarCardProduto() {
         
 
         let conteudo = "";
-        conteudo += "<div class='mldssocorro'"
+        conteudo += "<div class='div-artigo'"
             conteudo += '<br>'
             conteudo += ` <h2> titulo: ${titulo} </h2>` ;
             conteudo += '<br>'
