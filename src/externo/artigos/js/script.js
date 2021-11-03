@@ -21,7 +21,8 @@ function montarCardProduto() {
             conteudo += '</h3>'
             conteudo += '<br>'
             conteudo += '<br>'
-            conteudo += `<p> ${texto} </p>`
+            conteudo += ` Texto: ${texto} `
+            conteudo += ' <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="BtnLerMais">Ler Mais </button> '
         conteudo += "</div>"
 
 
