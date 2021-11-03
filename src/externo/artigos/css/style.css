@@ -22,6 +22,7 @@ body{
     height: 590px;
     font-size : 1vw;
     text-align: center;
+    border-left: 3px solid #2b80f7;
   }
   .div-publicar:hover {
     transform: translateY(-5px);
@@ -71,6 +72,7 @@ body{
     height: 590px;
     font-size : 1vw;
     text-align: center;
+    border-left: 3px solid #2e82f8;
   }
   .div-artigo:hover {
     transform: translateY(-5px);
