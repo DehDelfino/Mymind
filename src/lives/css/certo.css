@@ -40,7 +40,7 @@
 .botaoChamada{
   width: 130px;
   height: 130px;
-  background-image: url("../../../assets/CameraDesligada1.png");
+  background-image: url("../../../assets/off.jpg");
   margin-right: 25px;
 }
 
@@ -48,7 +48,7 @@
 .botaoChamada:hover{ 
    
   
-  background-image: url("../../../assets/CameraLigada1.png");
+  background-image: url("../../../assets/offff.jpg");
   
 }
 
@@ -57,7 +57,7 @@
   width: 130px;
   height: 130px;
   
-  background-image: url("../../../assets/microfoneDesligado.png");
+  background-image: url("../../../assets/ONMIC.png");
 
 
 }
@@ -65,7 +65,7 @@
 .botaoMicrofone:hover{ 
  
  
-  background-image: url("../../../assets/microfoneLigado.png");
+  background-image: url("../../../assets/MICOFF.png");
   
 }
 
