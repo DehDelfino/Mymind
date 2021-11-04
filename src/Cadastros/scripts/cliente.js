@@ -39,7 +39,7 @@ function cadastrar(){
   const $comoNosConheceuValue = $comoNosConheceu.options[$comoNosConheceu.selectedIndex].text
   const $user = document.getElementById("user")
   const $senha = document.getElementById("senha").value
-  // const $senhaConfirmacao = document.getElementById("confSenha").value
+ 
 
 
   
@@ -60,6 +60,7 @@ function cadastrar(){
     ComoNosConheceu: $comoNosConheceuValue,
     user: $user.value,
     password: $senha, 
+    loged:false
 
   }
 

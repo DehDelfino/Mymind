@@ -1,9 +1,34 @@
-import headerProfile from "../components/headerProfile/index.js"
+import headerProfileContent from '../components/headerProfileContent/index.js'
+
+const imgTest= "https://images.unsplash.com/photo-1529665253569-6d01c0eaf7b6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=785&q=80"
+
+
+
+
+
+
+const $headerProfileContent = headerProfileContent(imgTest)
+
+
+const headerProfile = ()=>{
+  return `
+  <div class = 'container mdl-cell mdl-cell--6-col'>
+        <div class= 'headerProfile-img'> </div>
+        <div class= 'headerProfile-content'> 
+            ${$headerProfileContent}
+        </div>
+
+  </div>
+  
+  
+  `
+}
+
 
 const $root = document.querySelector('#root')
 
 const $headerProfile = headerProfile()
-console.log($headerProfile)
+
 
 
 $root.insertAdjacentHTML("beforeend",$headerProfile)  
