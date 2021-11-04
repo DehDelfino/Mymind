@@ -1,25 +1,34 @@
 body{
     margin:0px;
 }
-.div-pagina{
-    width: 90%;
-    height: 90%;
-    background-color:red;
-}
+
 
 .div-buscar{
     margin: 15px;
 }
 
-.mldssocorro{
-
-    width: 300px;
-    height: 600px;
-    background-color:rgb(68, 68, 255);
-    margin: 15px;
-    border-radius:10px;
+.mdl-textfield__label {
+    left: 20px;
 }
 
+.div-publicar {
+  
+    
+    border-radius: 15px;
+    box-shadow: 20px 10px 20px 2px rgb(50 50 50 / 50%);
+    margin-left: 25%;
+    width: 450px;
+    transition: all 0.2s ease-out;
+    height: 590px;
+    font-size : 1vw;
+    text-align: center;
+    border-left: 3px solid #2b80f7;
+  }
+  .div-publicar:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+   
 .div-cardTexto{
     width: 100%;
     height: 240px;
@@ -27,25 +36,46 @@ body{
     border-top-right-radius: 10px;
 }
 
-.titulo{
+#autor{
+    margin:3%;
+}
+#titulo{
+    margin:3%;
     font-size: 22px;
     font-style:italic;
     margin: 5px;
+    height: 40px;
 }
 
-.breveTexto{
-    font-size: 15px;
-    margin: 15px;
-    text-align: center;
-
+#texto{
+   
+    font-style:italic;
+    margin: 5px;
+    height: 300px;
 }
 
-.div-cardLerMais{
-    text-align: center;
-    font-weight: bold;
-    background-color:rgb(118, 225, 255);
-}
+
+
 
 .div-cardLerMais:hover{
     background-color:rgb(197, 240, 251);
 }
+
+.div-artigo {
+  
+    
+    border-radius: 15px;
+    box-shadow: 20px 10px 20px 2px rgb(50 50 50 / 50%);
+    margin: 50px;
+    width: 450px;
+    transition: all 0.2s ease-out;
+    height: 590px;
+    font-size : 1vw;
+    text-align: center;
+    border-left: 3px solid #2e82f8;
+  }
+  .div-artigo:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+   
