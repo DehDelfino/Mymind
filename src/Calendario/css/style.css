@@ -5,7 +5,7 @@ html{
   
     --header-color:#d36c6c;
   
-    --header-button:#92a1d1;
+    --header-button:#60B2FF;
   
     --color-weekdays: #247BA0;
     
@@ -141,3 +141,26 @@ html{
     position: absolute;
     background-color: rgba(0,0,0,0.8);
   }
+
+
+
+#button-live{
+  margin-top:5px;
+  background-color: #18C29C;
+}
+#button-live:hover{
+  background-color: #12997c;
+}
+
+#nextButton:hover,#backButton:hover{
+  background-color: #1f5cb3;
+}
+
+
+#cancelButton:hover, #deleteButton:hover{
+  background-color:#b84848 ;
+}
+#saveButton:hover, #closeButton:hover {
+  background-color: #1f5cb3;;
+}
+

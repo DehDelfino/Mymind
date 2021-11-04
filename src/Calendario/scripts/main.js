@@ -24,6 +24,7 @@ function openModal(date){
   if (eventDay){
    document.getElementById('eventText').innerText = eventDay.title
    deleteEventModal.style.display = 'block'
+   
 
 
   } else{
@@ -161,6 +162,8 @@ function buttons (){
     
   })
 
+ 
+  
   document.getElementById('saveButton').addEventListener('click',()=> saveEvent())
 
   document.getElementById('cancelButton').addEventListener('click',()=>closeModal())
@@ -168,6 +171,12 @@ function buttons (){
   document.getElementById('deleteButton').addEventListener('click', ()=>deleteEvent())
 
   document.getElementById('closeButton').addEventListener('click', ()=>closeModal())
+
+  document.getElementById('button-live').addEventListener('click', ()=>closeModal())
+
+  
+
+  
   
 }
 buttons()

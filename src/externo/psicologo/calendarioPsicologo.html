@@ -13,6 +13,7 @@
   
   <link rel="stylesheet" href="../styles/styleInterno.css">
   <link rel="stylesheet" href="../styles/calendario.css">
+  
   <link href="../../Calendario/css/darkMode.css" rel="stylesheet">
   <link href="../../Calendario/css/style.css" rel="stylesheet">
 
@@ -41,14 +42,14 @@
         <nav class="mdl-navigation">
             <div class="ImagemBulboPerfil"> 
             </div>
-            <a href="" class="mdl-navigation__link">Perfil</a>
-            <a href="calendarioPaciente.html" class="mdl-navigation__link">Agenda</a>
-             <a href="../../formulario/formulario.html"  class="mdl-navigation__link" > Formulário </a> 
-           
+          <a href="../../perfis/psicologo/index.html" class="mdl-navigation__link">Perfil</a>
+          <a href="calendarioPsicologo.html" class="mdl-navigation__link">Agenda</a>
+           <a href="../../formulario/formulario.html"  class="mdl-navigation__link" > Pacientes e vagas</a> 
          
-            <a href="#" class="mdl-navigation__link">Conversar com psicologo</a>
-            <a href="../buscarPsicologo/buscarPsicologo.html"  class="mdl-navigation__link" >Conversar com psicologo/Buscar Psicologo</a>
-            <a href="../configurações/indexConfigPaciente.html"  class="mdl-navigation__link">Configurações</a>
+       
+          <a href="../chat/a.html" class="mdl-navigation__link">Chat</a>
+          <a href="../artigos/indexArtigoPsicologo.html"  class="mdl-navigation__link" >Artigos</a>
+          <a href="../configurações/indexConfiPsico.html"  class="mdl-navigation__link">Configurações</a>
         </nav>
     </div>
     
@@ -73,8 +74,8 @@
                   <div id="monthDisplay"></div>
           
                   <div>
-                    <button id="backButton">Voltar</button>
-                    <button id="nextButton">Próximo</button>
+                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="backButton">Voltar</button>
+                    <button class= "mdl-button mdl-js-button mdl-button--raised mdl-button--colored"id="nextButton">Próximo</button>
                   </div>
                     
                 </div>
@@ -97,12 +98,12 @@
             </div>
           
             <div id="newEventModal">
-              <h2>New Evente</h2>
+              <h2>Novo evento</h2>
           
-              <input id="eventTitleInput" placeholder="Event Title"/>
+              <input id="eventTitleInput" placeholder="Titulo do evento"/>
           
-              <button id="saveButton"> Salvar</button>
-              <button id="cancelButton">Cancelar</button>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored " id="saveButton"> Salvar</button>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="cancelButton">Cancelar</button>
             </div>
           
             <div id="deleteEventModal">
@@ -111,8 +112,14 @@
               <div id="eventText"></div><br>
           
           
-              <button id="deleteButton">Deletar</button>
-              <button id="closeButton">Fechar</button>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="deleteButton">Deletar</button>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="closeButton">Fechar</button>
+
+              <a href="../../lives/certo.html">
+                <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"  id='button-live'>Participar da live</button>
+              
+              </a>
+
             </div>
           
             <div id="modalBackDrop"></div>
