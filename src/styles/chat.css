@@ -92,3 +92,12 @@
 .imagemcontato{
   margin-block-end: 600px;
 }
+.input{
+  width: 96%;
+}
+@media only screen and (max-width:768px){
+  .container, .contatos{
+    flex-wrap: wrap;
+    display: flex;
+  }
+ }
