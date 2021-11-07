@@ -6,7 +6,18 @@
     overflow-x: scroll;
     width: 1300px;
   }
+
+.container-cards{
+  display: flex;
+  width: 100%;
+ 
   
+ 
+  justify-content: center;
+  align-items:center ;
+  height: 100%;
+}
+
 .card {
   
     
@@ -18,6 +29,7 @@
     height: 590px;
     font-size : 1vw;
     text-align: center;
+    
   }
   .card:hover {
     transform: translateY(-5px);
@@ -38,14 +50,17 @@
   }
   .blue {
     border-left: 3px solid #4895ff;
+    margin-left: 5vw;
   }
    
   .green {
     border-left: 3px solid #3bb54a;
+    margin-left: 35vw;
   }
    
   .red {
     border-left: 3px solid #b3404a;
+    margin-left: 65vw;
   }
   
   .cardscentro{
@@ -82,6 +97,8 @@
        font-size : 60px;
        text-align: center;
        width: 90%;
+       margin-left: 5vw;
+
 
       
       
@@ -90,10 +107,13 @@
     }
     .blue {
       border-left: 3px solid #4895ff;
+      margin-top: 1400px;
+      
     }
      
     .green {
       border-left: 3px solid #3bb54a;
+      margin-top: 2800px;
     }
      
     .red {
