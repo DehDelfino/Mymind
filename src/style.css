@@ -302,6 +302,11 @@ body {
 #btn-cancelar:hover{
 background-color: rgb(197, 3, 3);
 }
+<<<<<<< HEAD
+
+
+
+=======
 body{
   background-color: #f4f7f6;
   margin-top:1px;
@@ -568,3 +573,4 @@ body{
    
   }
 }
+>>>>>>> main
