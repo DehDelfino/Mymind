@@ -6,7 +6,7 @@ const $senha = document.getElementById('senha')
 const $btnEntrar = document.getElementById('btn-entrar')
 const $conatainerSenha = document.getElementById('containerSenha')
 const $senhaInvalida = document.getElementById('msg-erroSenha')
-const $btnCadastrar = document.getElementById("btn-cadastrar")
+const $btnCadastrar = document.getElementById("btn-cadastrarLogin")
 
 const openModal = ()=>{
   $modalLogin.style.display ="block"
