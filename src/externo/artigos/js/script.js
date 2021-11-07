@@ -13,16 +13,15 @@ function montarCardProduto() {
         let conteudo = "";
         conteudo += "<div class='div-artigo'"
             conteudo += '<br>'
-            conteudo += ` <h2> titulo: ${titulo} </h2>` ;
+            conteudo += ` <h4> ${titulo} </h4>` ;
             conteudo += '<br>'
             conteudo += '<br>'
-            conteudo += '<h3>'
-            conteudo += ` autor: ${autor}`
-            conteudo += '</h3>'
+            conteudo += '<h6>'
+            conteudo += ` Autor: ${autor}`
+            conteudo += '</h6>'
             conteudo += '<br>'
-            conteudo += '<br>'
-            conteudo += ` Texto: ${texto} `
-            conteudo += ' <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="BtnLerMais">Ler Mais </button> '
+            conteudo += ` <p> Texto: ${texto} </p> `
+            conteudo += ' <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="BtnLerMais">Ler Mais (redirecionar a pagina de publicação) </button> '
         conteudo += "</div>"
 
 
