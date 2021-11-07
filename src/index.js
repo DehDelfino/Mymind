@@ -20,15 +20,16 @@ const closeModal = ()=>{
 $closeButton.addEventListener('click',()=> closeModal())
 $entrar.addEventListener('click', ()=> openModal())
 
-//verificar se o usuario é cadastrado e então a senha
+//verificar se o usuario é cadastrado e então verificar a senha
 $btnEntrar.addEventListener('click',()=>{
   
   const usuarios = JSON.parse(localStorage.getItem("usuarios"))
 
+  debugger
 
   const usuarioDigitado = $usuario.value
   const senhaDigitada = $senha.value
-    debugger
+    
 
   const usuario = usuarios.findIndex((usuario)=>usuario.user === usuarioDigitado && usuario.password === senhaDigitada)
   
@@ -49,4 +50,6 @@ $btnEntrar.addEventListener('click',()=>{
     
   }
 })
-//verificação de campo senha usuario
+
+
+
