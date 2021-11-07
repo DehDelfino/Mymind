@@ -166,3 +166,6 @@ font-family: Podkova;
 font-size: 20px;
 
 }
+#msg-erroSenha{
+  display:none;
+}

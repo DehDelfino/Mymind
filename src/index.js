@@ -5,6 +5,7 @@ const $usuario = document.getElementById('usuario')
 const $senha = document.getElementById('senha')
 const $btnEntrar = document.getElementById('btn-entrar')
 const $conatainerSenha = document.getElementById('containerSenha')
+const $senhaInvalida = document.getElementById('msg-erroSenha')
 
 const openModal = ()=>{
   $modalLogin.style.display ="block"
@@ -27,19 +28,25 @@ $btnEntrar.addEventListener('click',()=>{
 
   const usuarioDigitado = $usuario.value
   const senhaDigitada = $senha.value
-  debugger
+    debugger
 
   const usuario = usuarios.findIndex((usuario)=>usuario.user === usuarioDigitado && usuario.password === senhaDigitada)
   
   if(usuario >= 0){
-   
+
+    $senhaInvalida.style.display= 'none'
+    
     
     usuarios[usuario].loged = true
 
     window.localStorage.setItem("usuarios",JSON.stringify(usuarios))
 
+    
+
   }else{
-    console.log('naõ encontrou')
+    $senhaInvalida.style.display= 'block'
+    
     
   }
 })
+//verificação de campo senha usuario
