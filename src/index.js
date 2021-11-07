@@ -34,7 +34,7 @@ $btnEntrar.addEventListener('click',()=>{
 
   const usuario = usuarios.findIndex((usuario)=>usuario.user === usuarioDigitado && usuario.password === senhaDigitada)
   
-  if(usuario >= 0){
+  if(usuario >= 0 || usuario === null){
 
     $senhaInvalida.style.display= 'none'
     
