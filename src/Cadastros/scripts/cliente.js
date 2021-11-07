@@ -53,7 +53,7 @@ function cadastrar(){
     loged:false
 
   }
-  debugger
+ 
 
   novoUsuario.push(dadosUsuario)
 
