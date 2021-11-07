@@ -27,14 +27,19 @@ $btnEntrar.addEventListener('click',()=>{
   const usuarios = JSON.parse(localStorage.getItem("usuarios"))
 
   
-  debugger
+  
   const usuarioDigitado = $usuario.value
   const senhaDigitada = $senha.value
     
 
-  const usuario = usuarios.findIndex((usuario)=>usuario.user === usuarioDigitado && usuario.password === senhaDigitada)
+  try{
+    var usuario = usuarios.findIndex((usuario)=>usuario.user === usuarioDigitado && usuario.password === senhaDigitada)
+
+  }catch(error){
+    var usuario = -1
+  }
   
-  if(usuario >= 0 || usuario === null){
+  if(usuario >= 0 ){
 
     $senhaInvalida.style.display= 'none'
     
