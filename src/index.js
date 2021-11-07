@@ -42,6 +42,8 @@ $btnEntrar.addEventListener('click',()=>{
 
     window.localStorage.setItem("usuarios",JSON.stringify(usuarios))
 
+    window.location.assign('./perfis/usuario/index.html')
+
     
 
   }else{
