@@ -89,11 +89,7 @@ debugger
 //botão cadastrar
 const $buttonCadastrar = document.getElementById('btn-cadastrar')
 
-$buttonCadastrar.addEventListener("click", ()=>{
-  
-  cadastrar()
-  
-})
+$buttonCadastrar.addEventListener("click", ()=> cadastrar())
 
 
 // confirmação de senha
