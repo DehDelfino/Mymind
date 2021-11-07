@@ -6,6 +6,7 @@ const $senha = document.getElementById('senha')
 const $btnEntrar = document.getElementById('btn-entrar')
 const $conatainerSenha = document.getElementById('containerSenha')
 const $senhaInvalida = document.getElementById('msg-erroSenha')
+const $btnCadastrar = document.getElementById("btn-cadastrar")
 
 const openModal = ()=>{
   $modalLogin.style.display ="block"
@@ -25,7 +26,7 @@ $btnEntrar.addEventListener('click',()=>{
   
   const usuarios = JSON.parse(localStorage.getItem("usuarios"))
 
-  debugger
+  
 
   const usuarioDigitado = $usuario.value
   const senhaDigitada = $senha.value
@@ -53,5 +54,10 @@ $btnEntrar.addEventListener('click',()=>{
   }
 })
 
+//Cadastrar
+
+$btnCadastrar.addEventListener('click',()=>{
+  window.location.assign("./cadastros/cliente.html")
+})
 
 

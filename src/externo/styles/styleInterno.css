@@ -1,4 +1,7 @@
 
+main{
+height: 100%;
+}
 .content-menu-item{
     width: auto;
     max-height: 35px;
