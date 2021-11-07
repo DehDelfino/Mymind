@@ -27,7 +27,7 @@ $btnEntrar.addEventListener('click',()=>{
   const usuarios = JSON.parse(localStorage.getItem("usuarios"))
 
   
-
+  debugger
   const usuarioDigitado = $usuario.value
   const senhaDigitada = $senha.value
     
@@ -57,7 +57,7 @@ $btnEntrar.addEventListener('click',()=>{
 //Cadastrar
 
 $btnCadastrar.addEventListener('click',()=>{
-  window.location.assign("./cadastros/cliente.html")
+  window.location.assign("./Cadastros/cliente.html")
 })
 
 
