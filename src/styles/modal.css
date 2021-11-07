@@ -122,14 +122,14 @@
 margin-top: 20px;
 background-color: #18C29C;
 }
-#btn-cadastrar{
+#btn-cadastrarLogin{
 margin: 20px;
 margin-top: 40px;
 }
 #btn-esquecer{
 margin-top: 20px;
 }
-#btn-cadastrar:hover{
+#btn-cadastrarLogin:hover{
 background-color: #1f5cb3;
 }
 #btn-entrar:hover{

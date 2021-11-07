@@ -25,8 +25,8 @@ function validacaoUsuario (usuario){
 
 
 
-function cadastrar(e){
-  e.preventDefault()
+function cadastrar(){
+  
 
   //dados
   const $nomeCompletoValue = document.getElementById("nomeCompleto").value
@@ -82,20 +82,18 @@ function cadastrar(e){
  
 
 
-
-
- 
- 
-
-  
-
+debugger
   
 }
 
 //botão cadastrar
 const $buttonCadastrar = document.getElementById('btn-cadastrar')
 
-$buttonCadastrar.addEventListener("click", (e)=>cadastrar(e))
+$buttonCadastrar.addEventListener("click", ()=>{
+  
+  cadastrar()
+  
+})
 
 
 // confirmação de senha
