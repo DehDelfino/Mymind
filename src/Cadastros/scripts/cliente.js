@@ -147,3 +147,156 @@ $user.addEventListener('blur',()=>{
   
 
 })
+
+// verificação do campo nome 
+
+const $nome = document.getElementById("nomeCompleto")
+
+$nome.addEventListener('blur',()=>{
+  
+  const inputUsuario = $nome.value
+
+
+  
+
+  
+  if(inputUsuario.length <= 1){
+    $nome.style.borderColor = "red" //muda a borda para vermelho
+    document.getElementById('btn-cadastrar').disabled=true //desabilita o botão de cadastro
+  }
+  //retorna ao normal
+  else{
+    $nome.style.borderColor = ""
+    document.getElementById('btn-cadastrar').disabled=false
+  }
+
+  
+
+})
+
+
+
+
+// verificação do campo data
+
+const $data = document.getElementById("dtnasc")
+
+$data.addEventListener('blur',()=>{
+  
+  const inputUsuario = $data.value
+
+
+  
+
+  
+  if(inputUsuario.length <= 7){
+    $data.style.borderColor = "red" //muda a borda para vermelho
+    document.getElementById('btn-cadastrar').disabled=true //desabilita o botão de cadastro
+  }
+  //retorna ao normal
+  else{
+    $data.style.borderColor = ""
+    document.getElementById('btn-cadastrar').disabled=false
+  }
+
+  
+
+})
+
+
+
+// verificação do campo numero de telefone
+
+const $numeroDeTelefone = document.getElementById("telefone")
+
+$numeroDeTelefone.addEventListener('blur',()=>{
+  
+  const inputUsuario =parseInt($numeroDeTelefone.value)
+
+
+  
+
+  
+  if(inputUsuario.toString().length <= 10){
+    $numeroDeTelefone.style.borderColor = "red" //muda a borda para vermelho
+    document.getElementById('btn-cadastrar').disabled=true //desabilita o botão de cadastro
+  }
+  //retorna ao normal
+  else{
+    $numeroDeTelefone.style.borderColor = ""
+    document.getElementById('btn-cadastrar').disabled=false
+  }
+
+  
+
+})
+
+
+
+
+// verificação do campo e-mail
+
+const $email = document.getElementById("email")
+
+
+
+$email.addEventListener('blur',()=>{
+  
+  const inputUsuario = $email.value
+  
+
+  usuario = inputUsuario.substring(0,  inputUsuario.indexOf("@"));
+  dominio =  inputUsuario.substring( inputUsuario.indexOf("@")+ 1,  inputUsuario.length);
+
+  if ((usuario.length >=1) &&
+      (dominio.length >=3) &&
+      (usuario.search("@")==-1) &&
+      (dominio.search("@")==-1) &&
+      (usuario.search(" ")==-1) &&
+      (dominio.search(" ")==-1) &&
+      (dominio.search(".")!=-1) &&
+      (dominio.indexOf(".") >=1)&&
+      (dominio.lastIndexOf(".") < dominio.length - 1)) 
+      {
+
+        $email.style.borderColor = ""
+        document.getElementById('btn-cadastrar').disabled=false
+      }
+  else{
+    $email.style.borderColor = "red" //muda a borda para vermelho
+    document.getElementById('btn-cadastrar').disabled=true //desabilita o botão de cadastro
+  }
+  
+
+ 
+
+  
+
+})
+
+
+// verificação do campo CPF
+
+const $cpf = document.getElementById("cpf")
+
+$cpf.addEventListener('blur',()=>{
+  
+  const inputUsuario = $cpf.value
+
+
+  
+
+  
+  if(inputUsuario.length <= 10){
+    $cpf.style.borderColor = "red" //muda a borda para vermelho
+    document.getElementById('btn-cadastrar').disabled=true //desabilita o botão de cadastro
+  }
+  //retorna ao normal
+  else{
+    $cpf.style.borderColor = ""
+    document.getElementById('btn-cadastrar').disabled=false
+  }
+
+  
+
+})

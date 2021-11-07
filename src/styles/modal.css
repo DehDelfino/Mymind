@@ -14,8 +14,9 @@
   
 }
 
-/* .centralizar{
+ .centralizar{
   width: fit-content;
+  max-width: 40%;
   margin: 20px auto;
   padding: 20px;
   background-color: aliceblue;  
@@ -27,7 +28,7 @@
   
   
 
-} */
+} 
 .container-login{
   display: flex;
   align-items: center;
