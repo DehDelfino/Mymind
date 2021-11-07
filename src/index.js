@@ -27,7 +27,7 @@ $btnEntrar.addEventListener('click',()=>{
   const usuarios = JSON.parse(localStorage.getItem("usuarios"))
 
   
-  debugger
+  
   const usuarioDigitado = $usuario.value
   const senhaDigitada = $senha.value
     
