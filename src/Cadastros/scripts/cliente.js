@@ -8,18 +8,7 @@ const novoUsuario = [] //array que armazenrara provisoriamente os dados do usuar
 
 
 
-function validacaoUsuario (usuario){
 
- 
-  const usuariosA = JSON.parse(localStorage.getItem("usuarios"))
-
-  const usuarioExistente = usuariosA.map((usuarios)=> usuarios.user === usuario)
-
- 
- return usuarioExistente
-  
-
-}
 
 
 
@@ -64,10 +53,11 @@ function cadastrar(){
     loged:false
 
   }
+  debugger
 
   novoUsuario.push(dadosUsuario)
 
-  const usuariosA = JSON.parse(localStorage.getItem("usuarios"))
+  const usuariosA = JSON.parse(localStorage.getItem("usuarios")) ||[]
   
 
   const usuarios = [...usuariosA, ...novoUsuario]
@@ -82,7 +72,7 @@ function cadastrar(){
  
 
 
-debugger
+
   
 }
 
