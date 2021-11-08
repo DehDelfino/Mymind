@@ -1,10 +1,13 @@
-   const $botaoEnviar = document.getElementById('BtnEnviar')
+  
+   const $botaoEnviar = document.getElementById('BtnEnviar') 
+   
+   
 
 $botaoEnviar.addEventListener("click", ()=>{
 
-  console.log('chegay')
+ 
 
-    const artigos = []
+ const listaArtigos = JSON.parse( localStorage.getItem("artigo"))|| []
  
     const $titulo = document.getElementById('titulo')
     const $autor = document.getElementById('autor')
@@ -17,11 +20,13 @@ $botaoEnviar.addEventListener("click", ()=>{
         autor: $autor.value ,
     }
     
-    artigos.push(artigo)
+    listaArtigos.push(artigo)
     
-    window.localStorage.setItem("artigo", JSON.stringify(artigos))
+    window.localStorage.setItem("artigo", JSON.stringify(listaArtigos))
+
 
 })
+
 
 
 
