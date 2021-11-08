@@ -1,5 +1,6 @@
 // variaveis globais
 
+
 let nav = 0
 let clicked = null
 let events = localStorage.getItem('events') ? JSON.parse(localStorage.getItem('events')) : []
@@ -124,6 +125,7 @@ function closeModal(){
 
 }
 function saveEvent(){
+  
   if(eventTitleInput.value){
     eventTitleInput.classList.remove('error')
 
@@ -150,6 +152,7 @@ function deleteEvent(){
 // botões 
 
 function buttons (){
+  
   document.getElementById('backButton').addEventListener('click', ()=>{
     nav--
     load()
@@ -160,6 +163,12 @@ function buttons (){
     nav++
     load()
     
+  })
+  document.getElementById('button-live').addEventListener('click',()=>{
+    debugger
+    // window.location.assign("../../lives/LivePaciente.html")
+    // window.location.href("http://google.com.br")
+    console.log('oii')
   })
 
  
