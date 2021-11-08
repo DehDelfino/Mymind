@@ -29,7 +29,7 @@ html{
   
   body {
     display: flex;
-    margin-top: 50px;
+    
     justify-content: center;
     background-color: var(--body-color);
   }
