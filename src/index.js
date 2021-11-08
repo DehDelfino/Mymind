@@ -62,7 +62,5 @@ $btnEntrar.addEventListener('click',()=>{
 //Cadastrar
 
 $btnCadastrar.addEventListener('click',()=>{
-  window.location.assign("./Cadastros/cliente.html")
+  window.location.assign("../Externoo/Cadastros/cliente.html")
 })
-
-
