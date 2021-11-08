@@ -1,5 +1,5 @@
 async function startVideoFromCamera(){
-    const specs = {video: {width: 1000, aspectRatio: 21/9}}
+    const specs = {video: {width: 850 , aspectRatio: 21/9}}
 
     const live = await navigator.mediaDevices.getUserMedia(specs)
 
