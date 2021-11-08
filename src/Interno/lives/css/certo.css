@@ -1,0 +1,125 @@
+
+#header{
+  position: fixed;
+  
+}
+
+#footer{
+  /* display: none; */
+}
+/* main */
+.container{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-top: 70px;
+  margin-left:0%;
+  
+}
+.container-cam{
+  flex:2;
+  display: flex;
+  flex-direction: column;
+  max-height: 430px;
+}
+
+/* camera */
+
+
+#live{
+  border: center;
+}
+.botoes-live{
+  flex: 1;
+  
+  max-height:300px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.botaoChamada{
+  margin-left: 0%;
+  width: 130px;
+  height: 130px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1 ;
+  margin-top: -150px;
+  
+  background-image: url("../../../../assets/desligar.png");
+  
+}
+
+
+.botaoChamada:hover{ 
+   
+  
+  background-image: url("../../../../assets/desligarhover.png");
+  
+}
+
+.botaoMicrofone{
+  margin-left: 0%;
+  width: 130px;
+  height: 130px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index:1 ; 
+  margin-top: -150px;
+  
+  background-image: url("../../../../assets/ONMIC.png");
+
+
+}
+
+.botaoMicrofone:hover{ 
+ 
+ 
+  background-image: url("../../../../assets/MICOFF.png");
+  
+}
+
+
+
+/* chat */
+.container-chat{
+ flex: 3;
+ /* background-color: blueviolet; */
+ margin-right:20px ;
+}
+.chat{
+
+  margin: 10px;
+  height: 70%;
+}
+.chat-usuario{
+  background-color: rgb(255, 255, 255);
+  border-style:none none groove  none  ;
+  padding: 10px;
+  
+}
+.chat-usuario img{
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+/* textArea chat */
+.inserTexto{
+  /* background-color: brown; */
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.inserTexto img{
+  margin-right: 5px;
+}
+
+.txt{
+  margin-top: 5px;
+}
