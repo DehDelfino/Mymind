@@ -1,3 +1,4 @@
+import {} from '../src/Interno/Paciente'
 const $entrar = document.getElementById("entrar")
 const $modalLogin = document.getElementById('login')
 const $closeButton = document.getElementById('close-button')
@@ -48,7 +49,7 @@ $btnEntrar.addEventListener('click',()=>{
     
     window.localStorage.setItem("usuarios",JSON.stringify(usuarios))
 
-    window.location.assign('../interno/Paciente/perfilPaciente.html')
+    window.location.assign('../src/Interno/Paciente/perfilPaciente.html')
 
     
 
