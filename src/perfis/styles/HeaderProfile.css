@@ -209,9 +209,7 @@ h1{
   
   
   border-radius: 15px;
- 
-  
-  background-color: #0D2E5C;
-  
+  width: 80%;
+  border:0;
   margin-right: 5px;
 }
