@@ -51,16 +51,19 @@
   .blue {
     border-left: 3px solid #4895ff;
     margin-left: 5vw;
+    
   }
    
   .green {
     border-left: 3px solid #3bb54a;
     margin-left: 35vw;
+    
   }
    
   .red {
     border-left: 3px solid #b3404a;
     margin-left: 65vw;
+    
   }
   
   .cardscentro{
@@ -72,6 +75,10 @@
   }
   #footer{
     display: none;
+    
+  }
+  main{
+    height: 100vh;
   }
 @media only screen and (max-width:768px) {
     body{
