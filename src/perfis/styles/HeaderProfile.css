@@ -112,16 +112,10 @@
 
 
 /* STYLE PUBLICAÇÃO */
-aside{
-  background-color: #1f5cb3;
-  flex:1;
-}
-main{
-  background-color: #69f270;
-  
-}
+
+
 h1{
-  color:white;
+  color:rgb(97, 65, 212);
   font-family: Podkova;
 }
 #btn-seguir{
@@ -173,7 +167,7 @@ h1{
 }
 .container-header{
   width: 100%;
-  border-bottom: solid 1px white;
+  border-bottom: solid 1px rgb(178, 170, 247);
   
 }
 
@@ -210,12 +204,14 @@ h1{
   justify-content: center;
 }
 
-.input-publicação{
+
+#batatinha{
   
-  width: 50%;
+  
   border-radius: 15px;
-  border: 0;
-  height: 30px;
+ 
+  
+  background-color: #0D2E5C;
   
   margin-right: 5px;
 }
