@@ -164,12 +164,7 @@ function buttons (){
     load()
     
   })
-  document.getElementById('button-live').addEventListener('click',()=>{
-    debugger
-    // window.location.assign("../../lives/LivePaciente.html")
-    // window.location.href("http://google.com.br")
-    console.log('oii')
-  })
+ 
 
  
   
