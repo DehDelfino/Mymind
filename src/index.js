@@ -27,7 +27,7 @@ $btnEntrar.addEventListener('click',()=>{
   const usuarios = JSON.parse(localStorage.getItem("usuarios"))
 
   
-  
+  debugger
   const usuarioDigitado = $usuario.value
   const senhaDigitada = $senha.value
     
@@ -40,15 +40,15 @@ $btnEntrar.addEventListener('click',()=>{
   }
   
   if(usuario >= 0 ){
-
+    
     $senhaInvalida.style.display= 'none'
     
     
     usuarios[usuario].loged = true
-
+    
     window.localStorage.setItem("usuarios",JSON.stringify(usuarios))
 
-    window.location.assign('./perfis/usuario/index.html')
+    window.location.assign('../interno/Paciente/perfilPaciente.html')
 
     
 
