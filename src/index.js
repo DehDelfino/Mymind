@@ -48,8 +48,11 @@ $btnEntrar.addEventListener('click',()=>{
     usuarios[usuario].loged = true
     
     window.localStorage.setItem("usuarios",JSON.stringify(usuarios))
+    debugger
+    const caminho = '.././Interno/Paciente/perfilPaciente.html'
+    
 
-    window.location.assign('./Interno/Paciente/perfilPaciente.html')
+    window.location.assign(caminho)
 
     
 
