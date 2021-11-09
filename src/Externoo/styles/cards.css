@@ -157,9 +157,12 @@
       .card{
         width: 280px;
         height: 630px;
+        margin-bottom: 280px;
         
       }
-      
+      footer{
+        margin-top: 1200px;
+      }
     }
       
    
