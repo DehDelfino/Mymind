@@ -67,7 +67,8 @@ body{
     flex-direction: column;
     border-radius: 15px;
     box-shadow: 20px 10px 20px 2px rgb(50 50 50 / 50%);
-    margin: 50px;
+    margin-left: 25%;
+    margin-top:10px;
     width: 35%;
     transition: all 0.2s ease-out;
     font-size : 1vw;
