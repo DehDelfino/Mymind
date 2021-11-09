@@ -16,6 +16,11 @@
   justify-content: center;
   align-items:center ;
   height: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  gap: 0 5rem;
+  
 }
 
 .card {
@@ -24,11 +29,15 @@
     border-radius: 15px;
     box-shadow: 20px 10px 20px 2px rgb(50 50 50 / 50%);
     margin: 50px;
-    width: 450px;
+    width: 380px;
     transition: all 0.2s ease-out;
-    height: 590px;
+    height: 520px;
     font-size : 1vw;
     text-align: center;
+   justify-content: space-between;
+   gap: 0 5rem;
+   
+  
     
   }
   .card:hover {
@@ -50,19 +59,19 @@
   }
   .blue {
     border-left: 3px solid #4895ff;
-    margin-left: 5vw;
+    margin-left: 35vw;
     
   }
    
   .green {
     border-left: 3px solid #3bb54a;
-    margin-left: 35vw;
+    margin-left: 1vw;
     
   }
    
   .red {
     border-left: 3px solid #b3404a;
-    margin-left: 65vw;
+    margin-left: 70vw;
     
   }
   
@@ -127,9 +136,30 @@
       border-left: 3px solid #b3404a;
     }
         
-    body {
+   main {
       height: 100vh;
     }
     
     }
-  
+    @media only screen and (max-width:1238px ) {
+      .red{
+        margin-right: 11vw;
+        
+      }
+      .blue{
+        margin-right: 10vw;
+      }
+      .green{
+        margin-right: 10vw;
+      }
+    } 
+    @media only screen and (max-width:1200px ) {
+      .card{
+        width: 280px;
+        height: 630px;
+        
+      }
+      
+    }
+      
+   

@@ -131,8 +131,11 @@ body{
   
   .chat .chat-history .message-data img {
     border-radius: 40px;
-    width: 40px
+    width: 40px;
+    margin-left: 1370px;
   }
+
+
   
   .chat .chat-history .message-data-time {
     color: #434651;
