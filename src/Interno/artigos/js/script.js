@@ -1,6 +1,6 @@
-const listaArtigos = JSON.parse( localStorage.getItem("artigo"))
+const listaArtigos = JSON.parse( localStorage.getItem("artigo"))||[]
 
-console.log(listaArtigos)
+
 
 function montarCardProduto() {
 
@@ -25,7 +25,7 @@ function montarCardProduto() {
         conteudo += "</div>"
 
 
-        console.log(conteudo)
+   
         if(conteudo.type ===undefined){
             div.innerHTML += conteudo
         }

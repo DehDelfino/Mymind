@@ -12,10 +12,6 @@ async function startVideoFromCamera(){
 }
 
 
-async function socorro(){
-    
-}
-
 
 
 
