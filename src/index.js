@@ -1,4 +1,4 @@
-import {} from '../src/Interno/Paciente'
+
 const $entrar = document.getElementById("entrar")
 const $modalLogin = document.getElementById('login')
 const $closeButton = document.getElementById('close-button')
