@@ -5,4 +5,20 @@
     flex-direction: column;
     /* height: 100%; */
     padding: 50px;
-}
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+    border-radius: 7px;
+    margin-bottom: 3%;
+  }
+  @media only screen and (max-width: 767px){
+    .calendario{
+        flex-wrap: wrap;
+        padding: 1px;
+        
+
+    }
+    
+
+  }
