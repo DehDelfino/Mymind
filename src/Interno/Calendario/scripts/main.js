@@ -78,6 +78,9 @@ function load (){
   for (let i = 1; i <= paddinDays + daysMonth; i++) {
     const dayS = document.createElement('div')
     dayS.classList.add('day')
+    dayS.classList.add('mld-cell')
+    dayS.classList.add('mdl-cell--2-col')
+    
 
     const dayString = `${month + 1}/${i - paddinDays}/${year}`
 
