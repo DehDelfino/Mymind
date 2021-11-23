@@ -1,7 +1,3 @@
-
-
-
- 
 const novoUsuario = [] //array que armazenrara provisoriamente os dados do usuario
 
 
@@ -113,19 +109,25 @@ $user.addEventListener('blur',()=>{
 
   console.log(inputUsuario)
   const usuariosA = JSON.parse(localStorage.getItem("usuarios"))
+
+
+
+ 
   
 
   const usuarioExistente = usuariosA.findIndex(({user})=> user == inputUsuario )
   console.log(usuarioExistente)
 
-  if(usuarioExistente >= 0){
+  if(usuarioExistente >= 0 || inputUsuario.length < 3){
     $user.style.borderColor = "red" //muda a borda para vermelho
     document.getElementById('btn-cadastrar').disabled=true //desabilita o botão de cadastro
+    document.querySelector("#erro-usuario").style.display ='flex'
   }
   //retorna ao normal
   else{
-    $user.style.borderColor = ""
+    $user.style.borderColor = "green"
     document.getElementById('btn-cadastrar').disabled=false
+    document.querySelector("#erro-usuario").style.display ="none"
   }
 
   
@@ -144,14 +146,17 @@ $nome.addEventListener('blur',()=>{
   
 
   
-  if(inputUsuario.length <= 1){
+  if(inputUsuario.length <= 1 ){
     $nome.style.borderColor = "red" //muda a borda para vermelho
     document.getElementById('btn-cadastrar').disabled=true //desabilita o botão de cadastro
+    document.querySelector("#erro-nome").style.display ='flex'
+
   }
   //retorna ao normal
   else{
-    $nome.style.borderColor = ""
+    $nome.style.borderColor = "green"
     document.getElementById('btn-cadastrar').disabled=false
+    document.querySelector("#erro-nome").style.display ='none'
   }
 
   
@@ -176,11 +181,13 @@ $data.addEventListener('blur',()=>{
   if(inputUsuario.length <= 7){
     $data.style.borderColor = "red" //muda a borda para vermelho
     document.getElementById('btn-cadastrar').disabled=true //desabilita o botão de cadastro
+    document.querySelector("#erro-data").style.display ='flex'
   }
   //retorna ao normal
   else{
-    $data.style.borderColor = ""
-    document.getElementById('btn-cadastrar').disabled=false
+    $data.style.borderColor = "green"
+    document.getElementById('btn-cadastrar').disabled=none
+    document.querySelector("#erro-data").style.display ='flex'
   }
 
   
@@ -204,11 +211,14 @@ $numeroDeTelefone.addEventListener('blur',()=>{
   if(inputUsuario.toString().length <= 10){
     $numeroDeTelefone.style.borderColor = "red" //muda a borda para vermelho
     document.getElementById('btn-cadastrar').disabled=true //desabilita o botão de cadastro
+    document.querySelector("#erro-numero").style.display ='flex'
+    
   }
   //retorna ao normal
   else{
-    $numeroDeTelefone.style.borderColor = ""
+    $numeroDeTelefone.style.borderColor = "green"
     document.getElementById('btn-cadastrar').disabled=false
+    document.querySelector("#erro-numero").style.display ="none"
   }
 
   
@@ -243,12 +253,14 @@ $email.addEventListener('blur',()=>{
       (dominio.lastIndexOf(".") < dominio.length - 1)) 
       {
 
-        $email.style.borderColor = ""
+        $email.style.borderColor = "green"
         document.getElementById('btn-cadastrar').disabled=false
+        document.querySelector("#erro-email").style.display ='none'
       }
   else{
     $email.style.borderColor = "red" //muda a borda para vermelho
     document.getElementById('btn-cadastrar').disabled=true //desabilita o botão de cadastro
+    document.querySelector("#erro-email").style.display ='flex'
   }
   
 
@@ -274,11 +286,13 @@ $cpf.addEventListener('blur',()=>{
   if(inputUsuario.length <= 10){
     $cpf.style.borderColor = "red" //muda a borda para vermelho
     document.getElementById('btn-cadastrar').disabled=true //desabilita o botão de cadastro
+    document.querySelector("#erro-cpf").style.display ='flex'
   }
   //retorna ao normal
   else{
-    $cpf.style.borderColor = ""
+    $cpf.style.borderColor = "green"
     document.getElementById('btn-cadastrar').disabled=false
+    document.querySelector("#erro-cpf").style.display ='none'
   }
 
   

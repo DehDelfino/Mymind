@@ -573,3 +573,30 @@ body{
    
   }
 }
+
+
+/* ERROS */
+#erro-nome{
+  display:none;
+  color:red;
+}
+#erro-data{
+  display:none;
+  color:red;
+}
+#erro-numero{
+  display:none;
+  color:red;
+}
+#erro-email{
+  display:none;
+  color:red;
+}
+#erro-cpf{
+  display:none;
+  color:red;
+}
+#erro-usuario{
+  display:none;
+  color:red;
+}

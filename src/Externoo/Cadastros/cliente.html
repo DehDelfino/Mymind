@@ -79,7 +79,11 @@
                   <div class="form-group">
                     <label class="col-md-2 control-label" for="Nome">Nome completo <h11>*</h11></label>  
                     <div class="col-md-8">
+                      <span id='erro-nome'>
+                        *Tenha certeza de ter digitado um nome com mais de uma letra e sem números
+                      </span>
                     <input id="nomeCompleto" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
+                      
                     </div>
                   </div>
                   
@@ -87,6 +91,9 @@
                     
                     <label class="col-md-2 control-label" for="Nome">Nascimento</label>  
                     <div class="col-md-2">
+                      <span id='erro-data'>
+                        *Parece que a data que você digitou não é valida. Tente dia/mês/ano
+                      </span>
                     <input id="dtnasc" name="dtnasc" placeholder="DD/MM/AAAA" class="form-control input-md" required="" type="text" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
                   </div>
                   
@@ -115,9 +122,14 @@
                   <!-- Prepended text-->
                   <div class="form-group">
                     <label class="col-md-2 control-label" for="prependedtext">Telefone <h11>*</h11></label>
+                        <span id='erro-numero'>
+                          *Parece que o número que você digitou não é valida. Tente (dd) x xxxx-xxxx
+                        </span>
                     <div class="col-md-2">
-                      <div class="input-group">
+                      <div class="input-group"> 
+                        
                         <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                       
                         <input id="telefone" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" required="" type="text" maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
                         OnKeyPress="formatar('## #####-####', this)">
                       </div>
@@ -128,8 +140,13 @@
                   
                   <!-- Prepended text-->
                   <div class="form-group">
+                    
                     <label class="col-md-2 control-label" for="prependedtext">Email <h11>*</h11></label>
+                    
                     <div class="col-md-5">
+                      <span id='erro-email'>
+                      *Parece que o email que você digitou não é valida
+                    </span>
                       <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
                         <input id="email" name="prependedtext" class="form-control" placeholder="email@email.com" required="" type="text"  >
@@ -142,6 +159,10 @@
                   <div class="form-group">
                     <label class="col-md-2 control-label" for="cpf">CPF <h11>*</h11></label>
                     <div class="col-md-2">
+                      <span id='erro-cpf'>
+                        *Parece que o CPF que você digitou não é valida tente sem pontos ou traços
+                        ex: xxxxxxxxxxx
+                      </span>
                       <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="11" pattern="[0-9]+$" OnKeyPress="formatar('###.###.###-##', this)">
                     </div>
                   </div>                  
@@ -197,9 +218,13 @@
 
 
                   <div class="form-group">
+                    
                     <label class="col-md-2 control-label" for="Nome">Usuário <h11>*</h11></label>  
                     
                     <div class="col-md-2">
+                      <span id='erro-usuario'>
+                      *Parece que o usuario escolhido não está correto. Talvez alguém tenha escolhido esse usuario ou tente escolher mais de 3 caracteres
+                    </span>
                       <input id="user" name="Nome" placeholder="" class="form-control input-md" required="" type="text">
                     </div>
 

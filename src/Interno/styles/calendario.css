@@ -22,3 +22,18 @@
     
 
   }
+
+  @media only screen and (max-width: 799px) {
+    .calendario{
+      display: none;
+  
+    }
+    #aviso{
+      display: flex;
+      background-color: rgb(169, 32, 32);
+      padding: 10px;
+      flex-direction: column;
+      height: 100%;
+    }
+  
+  }
