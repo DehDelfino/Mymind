@@ -38,7 +38,7 @@
 }
 
 .headerProfileContent-imgProfile{
-  border-color: #c1d6f3;
+  border-color: #eeeeee;
   border-radius: 100%;
   width: 200px;
   height:200px ;
@@ -72,7 +72,7 @@
 .headerProfileContent-user{
   margin-top: 5px;
   padding: 5px;
-  color: #425776;
+  color: #d8dee7;
   font-weight: bold;
   font-family: Podkova;
   font-size: 15px
@@ -126,16 +126,21 @@ h1{
   display: none;
 
 }
-.btn-curtir{
-  background-color: #1f5cb3;
-  border-radius: 25px;
-  color: aliceblue;
-  padding: 5px;
-  border: 0;
-  font-size: 15px;
+#btn-part{
+  top:  -10px;
+  margin-left: 5%;
 }
-.btn-curtir:hover{
-  background-color: #74a4e8;
+#btn-part:hover{
+  top:  -10px;
+ 
+  background-color: #283951;
+}
+#btn-curtir{
+  top:  -10px;
+  margin-left: 25%;
+}
+#btn-curtir:hover{
+  background-color: #283951;
 }
 .btn-live{
   background-color: #13c61c;
@@ -155,6 +160,7 @@ h1{
   height: 100%;
   align-items: center;
   justify-content: center;
+  
  
   
   
@@ -164,25 +170,37 @@ h1{
 
 
 .container-feed{
-  max-width: 50%;
-  flex:2;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: 0 auto;
   
   
 }
 .container-header{
   width: 100%;
-  border-bottom: solid 1px rgb(178, 170, 247);
+  border-bottom: solid 1px rgb(246, 246, 250);
   
 }
 
 .contente1{
   padding: 20px;
-  margin:10px;
+  margin:50px;
   width: 100%;
-  font-size: 30px;
+
   border-radius: 10px;
   border: solid 1px #1f5cb3;
-  background-color: rgb(230, 234, 252);
+  background-color: rgb(243, 244, 247);
+  border-radius: 15px;
+  box-shadow: 20px 10px 20px 2px rgb(50 50 50 / 50%);
+
+  
+  transition: all 0.2s ease-out;
+
+  font-size : 1vw;
+  text-align: center;
+ justify-content: space-between;
+ gap: 0 5rem;
   
 
   
@@ -216,4 +234,17 @@ h1{
   width: 80%;
   border:0;
   margin-right: 5px;
+}
+
+
+.blue {
+  border-left: 3px solid #4895ff;
+  margin-left: 1vw;
+  
+}
+
+.green {
+  border-left: 3px solid #3bb54a;
+  margin-left: 1vw;
+  
 }
