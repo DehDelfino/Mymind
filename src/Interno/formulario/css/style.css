@@ -19,6 +19,7 @@ img{
 h1{
     text-align: center;
     margin-top: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 img:hover{ 
@@ -51,13 +52,17 @@ img:hover{
 }
 
 p{
-    font-family: fantasy;
-    color: rgb(0, 21, 255);
-    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: dimgray;
+    font-size: 25px;
+    margin-bottom: 100px;
+    margin-left: 70px;
+    
+    
 }
 
 p:hover{
-    color: rgb(38, 208, 255);
+    color: black;
 }
 
 #aqui{
