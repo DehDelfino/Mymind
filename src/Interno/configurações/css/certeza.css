@@ -96,8 +96,6 @@ text-align: center;
   
 }
 
-.testando-main{
-  background-color: #2359a3;
-  height: 100%;
-  
+.profile__container{
+  margin: 50px;
 }
