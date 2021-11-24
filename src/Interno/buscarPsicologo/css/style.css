@@ -91,3 +91,27 @@ margin: 5px;
 #buscarBtn:hover{
 background-color : rgb(51, 49, 110);
 }
+
+.mdl-textfield__input{
+  margin:20px;
+  border: 5px;
+  padding: 10px;
+  width: 90%;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link{
+  color:black;
+}
+#sair{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(225, 14, 14);
+  margin: 40px;
+  color: white;
+  text-align: center;
+  
+}
+#sair:hover{
+    background-color: rgb(158, 14, 14);
+
+}
