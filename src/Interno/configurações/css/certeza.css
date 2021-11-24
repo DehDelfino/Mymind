@@ -99,3 +99,12 @@ text-align: center;
 .profile__container{
   margin: 50px;
 }
+
+
+
+@media only screen and (max-width: 530px) {
+ 
+  .titulo-pagina{
+    display: none;
+  }
+}
