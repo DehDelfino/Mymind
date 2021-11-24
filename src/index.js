@@ -10,6 +10,7 @@ const $senhaInvalida = document.getElementById('msg-erroSenha')
 const $btnCadastrar = document.getElementById("btn-cadastrarLogin")
 
 const openModal = ()=>{
+  
   $modalLogin.style.display ="block"
  
 }
