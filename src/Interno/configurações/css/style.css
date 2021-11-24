@@ -35,6 +35,8 @@ main{
     color: #fff;
     padding: 0.4rem 1rem;
     margin-bottom: 3rem;
+    font-size: larger;
+    font-family:Podkova;
 }
 
 #delete:hover{
