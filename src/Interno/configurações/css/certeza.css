@@ -22,6 +22,7 @@ body {}
   max-width: 400px;
   border-radius: 6px;
   border: 1px solid rgb(0, 0, 0);
+ 
   
 }
 
@@ -95,3 +96,6 @@ text-align: center;
   
 }
 
+.profile__container{
+  margin: 50px;
+}
