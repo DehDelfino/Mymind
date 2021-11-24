@@ -340,3 +340,27 @@ h1{
     transform: rotate(1turn);
   }
 }
+
+.titulo-pagina{
+  padding:10px;
+  background-color: aliceblue;
+  color: #2359a3;
+  margin-left: 40%;
+ 
+  border-radius: 5px;
+  /* font-weight: bold; */
+  
+}
+
+#aqui{
+  background-color: #c3dafa;
+  
+}
+
+
+@media only screen and (max-width: 530px) {
+ 
+  .titulo-pagina{
+    display: none;
+  }
+}
