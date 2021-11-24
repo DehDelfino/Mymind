@@ -225,3 +225,42 @@
     background-color: rgb(158, 14, 14);
 
 }
+
+
+#aviso{
+  display: none;
+}
+@media only screen and (max-width: 799px) {
+  .calendario{
+    display: none;
+
+  }
+  #aviso{
+    display: flex;
+    background-color: rgb(169, 32, 32);
+    padding: 10px;
+    flex-direction: column;
+    height: 100%;
+  }
+
+}
+
+.titulo-pagina{
+  padding:10px;
+  background-color: aliceblue;
+  color: #2359a3;
+  margin-left: 40%;
+  font-family: Podkova ;
+  border-radius: 5px;
+  /* font-weight: bold; */
+  
+}
+
+#aqui{
+  background-color: #c3dafa;
+  
+}
+
+
+
+
