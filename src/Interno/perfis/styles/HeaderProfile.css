@@ -387,4 +387,10 @@ h1{
  gap: 0 5rem;
   
   
+
+}
+
+#oi:hover{
+  background-color:rgb(4, 4, 88);
+
 }
