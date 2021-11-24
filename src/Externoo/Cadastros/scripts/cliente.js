@@ -186,8 +186,8 @@ $data.addEventListener('blur',()=>{
   //retorna ao normal
   else{
     $data.style.borderColor = "green"
-    document.getElementById('btn-cadastrar').disabled=none
-    document.querySelector("#erro-data").style.display ='flex'
+    document.getElementById('btn-cadastrar').disabled="none"
+    document.querySelector("#erro-data").style.display ='none'
   }
 
   
