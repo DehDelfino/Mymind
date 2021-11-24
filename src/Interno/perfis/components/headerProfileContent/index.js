@@ -1,7 +1,7 @@
 const headerProfileContent = (
     image="#",
     name='coloque aqui seu nome',
-    user ='coloque aqui seu usuario',
+    user ='@ coloque aqui seu usuario',
     description ='coloque aqui sua descrição'
     )=>{
 	return`

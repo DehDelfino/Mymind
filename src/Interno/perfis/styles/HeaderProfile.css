@@ -106,7 +106,7 @@
 .headerProfileContent-user{
   margin-top: 5px;
   padding: 5px;
-  color: #d8dee7;
+  color: #002255;
   font-weight: bold;
   font-family: Podkova;
   font-size: 15px
@@ -298,4 +298,21 @@ h1{
 
 #btn-dados:hover{
   background-color: #283951;
+}
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link{
+  color:black;
+}
+#sair{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(225, 14, 14);
+  margin: 40px;
+  color: white;
+  text-align: center;
+  
+}
+#sair:hover{
+    background-color: rgb(158, 14, 14);
+
 }
