@@ -25,7 +25,6 @@
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
             <span class="mdl-layout-title">MyMind</span>
-            <span class=" mdl-layout-title titulo-pagina">Feed</span>
             <div class="mdl-layout-spacer"></div>
             <div class="content-menu-item">
               <nav class="mdl-navigation">
@@ -41,7 +40,7 @@
       <span class="mdl-layout-title">MyMind</span>
         <nav class="mdl-navigation">
       
-            <a href="index.html" class="mdl-navigation__link" id="aqui">&#10161;Feed</a>
+            <a href="index.html" class="mdl-navigation__link">&#10161;Feed</a>
             <a href="../../Paciente/perfilPaciente.html" class="mdl-navigation__link">Perfil</a>
             <a href="../../Paciente/CalendarioPaciente.html" class="mdl-navigation__link">Agenda</a>
              <a href="../../formulario/formulario.html"  class="mdl-navigation__link" > Formulário </a> 
@@ -51,7 +50,7 @@
             <a href="../../buscarPsicologo/buscarPsicologo.html"  class="mdl-navigation__link" >Conversar com psicologo/Buscar Psicologo</a>
             <a href="../../configurações/ConfigPaciente.html"  class="mdl-navigation__link">Configurações</a>
             <a href="../ajuda/helpPaciente.html"  class="mdl-navigation__link">Ajuda</a>
-            <a href="../../Externoo/home.html"  class="mdl-navigation__link">Sair</a>
+            <a href="../../Externoo/home.html"  class="mdl-navigation__link" id="sair">Sair</a>
         </nav>
     </div>
     
@@ -60,64 +59,46 @@
 
     <div class="mdl-layout__content">
       <main>
-
+        
         <div class="container">
 
 					<div class="container-header">
 						
 					</div>
 					
-					<h1>Feed</h1>
+				
 					<div class="container-feed">
 
 						<div class="container-input">
-						<input  type="text" placeholder="Digite aqui" id="batatinha"/>
+						
+						</div>
+
+						<div class="contente1 blue">
+
+
+							<div class="titulo">
+								<span>@usuario</span>
+              
+							</div>
 					
-							
-							<button class="btn-live">Atualizar Feed</button>
-						</div>
-
-						<div class="contente1">
-
-
-							<div class="titulo">
-								<span>@usuario</span>
-								
-								<button class="btn-curtir"> curtir</button>
-							</div>
-
-							<div class="conteudoPublicação">
-								<p>   O autoconhecimento tem um valor especial para o próprio indivíduo. Uma pessoa que se tornou consciente de si mesma, por meio de perguntas que lhe foram feitas, está em melhor posição de prever e controlar seu próprio comportamento.
-
-                                                                   B. F. Skinner<p>
-								
-								<button class="btn-live"> Assistir live </button>
-							</div>
-																								
-
-						</div>
-						<div class="contente1">
-
-
-							<div class="titulo">
-								<span>@usuario</span>
-								
-								<button class="btn-curtir"> curtir</button>
-							</div>
 
 							<div class="conteudoPublicação">
 								<p> Sem dúvida, um desejo está ali presente porque houve a interdição. ... Um desejo pode ser suscitado pela proibição. Em Freud, o desejo, que é inconsciente, é designado pelo vocábulo alemão Wunsch, cuja tradução é anelo, aspiração. </p>
+							
 							</div>
+					 																			
 
-						
 						</div>
-						<div class="contente1">
+			
+						<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="btn-curtir" class="btn-curtir"> 	&#9825;  Curtir </button>
+
+						<div class="contente1 green">
 
 
 							<div class="titulo">
 								<span>@usuario</span>
 								
-								<button class="btn-curtir"> curtir</button>
+        
 							</div>
 
 							<div class="conteudoPublicação">
@@ -126,15 +107,17 @@
                                                                 Abraham  Maslow </p>
 							</div>
 
-						
 						</div>
-						<div class="contente1">
+           
+						<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="btn-curtir" class="btn-curtir"> 	&#9825;  Curtir </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="btn-part" class="btn-part">  &#128247;  Inscrever-se </button>
+						<div class="contente1 blue">
 
 
 							<div class="titulo">
 								<span>@usuario</span>
 								
-								<button class="btn-curtir"> curtir</button>
+              
 							</div>
 
 							<div class="conteudoPublicação">
@@ -143,12 +126,15 @@
                                                                  Anna Freud </p>
 							</div>
 
+           
 						
 						</div>
-
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="btn-curtir" class="btn-curtir"> 	&#9825;  Curtir </button>
 					</div>
 
 				</div>	
+          
+
           
       </main>
 
@@ -168,6 +154,7 @@
   
 
     <!-- MODAL -->
+ 
  
    
     </div>

@@ -284,8 +284,8 @@ h1{
 }
 
 
-.btn-escrever{
-  margin-top:-10px;
+#btn-escrever{
+  margin-top: 40px;
 }
 
 #btn-escrever:hover{
