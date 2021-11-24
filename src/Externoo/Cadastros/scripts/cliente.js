@@ -1,7 +1,3 @@
-
-
-
- 
 const novoUsuario = [] //array que armazenrara provisoriamente os dados do usuario
 
 

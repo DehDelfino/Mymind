@@ -164,15 +164,10 @@ html{
   background-color: #1f5cb3;;
 }
 
-#aviso{
-  display: none;
-}
-
-
 @media only screen and (max-width: 799px) {
   .calendario{
     display: none;
-    
+
   }
   #aviso{
     display: flex;
@@ -181,6 +176,5 @@ html{
     flex-direction: column;
     height: 100%;
   }
-  
-}
 
+}

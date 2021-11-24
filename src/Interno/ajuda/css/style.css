@@ -1,0 +1,17 @@
+.container-cam{   
+     display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+
+#per{
+    background-color: rgb(158, 215, 231);
+    border-radius:10px;
+}
+
+#Pergunta{
+    font-size:20px;
+    font-style: italic
+}

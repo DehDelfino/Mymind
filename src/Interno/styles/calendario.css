@@ -5,4 +5,35 @@
     flex-direction: column;
     /* height: 100%; */
     padding: 50px;
-}
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+    border-radius: 7px;
+    margin-bottom: 3%;
+  }
+  @media only screen and (max-width: 767px){
+    .calendario{
+        flex-wrap: wrap;
+        padding: 1px;
+        
+
+    }
+    
+
+  }
+
+  @media only screen and (max-width: 799px) {
+    .calendario{
+      display: none;
+  
+    }
+    #aviso{
+      display: flex;
+      background-color: rgb(169, 32, 32);
+      padding: 10px;
+      flex-direction: column;
+      height: 100%;
+    }
+  
+  }

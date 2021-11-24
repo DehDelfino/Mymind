@@ -8,43 +8,21 @@
     margin-right: auto;
 
 
-    background-image: url("../../../../assets/mapa.png");
+    background-image: url("../../../../assets/mapa2.jpg" );
+
+
 
 }
 
 #imagemBulbo{
     text-align: center;
-    top: 500px;
+ 
  
     line-height: 30px;
   
     left: 25%;
 }
 
-#buscarCidade{
-      position: absolute;
-    background-color: rgba(0,0,0,0.5);
-    color:#fff;
-    
-    top: 500px;
-   
-
-    height: 30px;
-    left: 15%;
-    }
-
-#buscarBtn{
-    position: absolute;
-  
-    left:15%;
-
-    top: 540px;
-  ;
-    line-height: 35px;
-    height: 30px;
- 
-
-}
 
 
 .modal {
@@ -86,4 +64,26 @@
 
 #txtBuscar{
     font-weight: bold;
+}
+
+.centralizar{
+    
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 20px 10px 20px 2px rgb(50 50 50 / 50%);
+  margin-left: 25%;
+  margin-top:15px;
+  width: 50%;
+  transition: all 0.2s ease-out;
+  font-size : 1vw;
+  text-align: center;
+  border-left: 3px solid #2e82f8;
+  overflow: hidden;
+  overflow-wrap: break-word;
+
+}
+
+.buscarCidade{
+  margin: 5px;
 }
