@@ -25,7 +25,6 @@
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
             <span class="mdl-layout-title">MyMind</span>
-            <span class=" mdl-layout-title titulo-pagina">Agenda</span>
             <div class="mdl-layout-spacer"></div>
             <div class="content-menu-item">
               <nav class="mdl-navigation">
@@ -69,6 +68,9 @@
 					</div>
 					
 					<h1>Feed</h1>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" id="btn-escrever" class="btn-escrever">   	
+            &#9998; </button>	
+          
 					<div class="container-feed">
 
 						<div class="container-input">
@@ -104,8 +106,7 @@
 							</div>
 
 							<div class="conteudoPublicação">
-								<p>     A felicidade é um problema individual. Aqui, nenhum conselho é válido. Cada um deve procurar, por si, tornar-se feliz. Sigmund Freud  </p>
-								
+								<p> Sem dúvida, um desejo está ali presente porque houve a interdição. ... Um desejo pode ser suscitado pela proibição. Em Freud, o desejo, que é inconsciente, é designado pelo vocábulo alemão Wunsch, cuja tradução é anelo, aspiração. </p>
 							</div>
 
 						</div>
@@ -122,8 +123,7 @@
 							</div>
 
 							<div class="conteudoPublicação">
-								<p>     Você não precisa ter sucesso para ser feliz, mas precisa ser feliz para ter sucesso. Shawn Achor </p>
-								
+								<p> Sem dúvida, um desejo está ali presente porque houve a interdição. ... Um desejo pode ser suscitado pela proibição. Em Freud, o desejo, que é inconsciente, é designado pelo vocábulo alemão Wunsch, cuja tradução é anelo, aspiração. </p>
 							</div>
 
            
@@ -133,6 +133,26 @@
 					</div>
 
 				</div>	
+
+        
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+              <span class="close">&times;</span>
+              <input class="mdl-textfield__input" type="text" id="autor" placeholder="Escreva aqui sua pubicação:">
+              <input class="" type="checkbox" value="" id="flexCheckIndeterminate">
+              <label class="form-check-label" for="flexCheckIndeterminate">
+               Agendamento de live
+              </label>
+              <input class="mdl-textfield__input" type="datetime-local" id="autor" placeholder="Data e hora"><br>
+              <input class="" type="checkbox" value="" id="flexCheckIndeterminate">
+              <label class="form-check-label" for="flexCheckIndeterminate">
+                Publicação de texto
+              </label><br>
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" class="btn-pub"> Publicar </button>
+          </div>
+      </div>
           
       </main>
 
@@ -152,6 +172,30 @@
   
 
     <!-- MODAL -->
+    <script>
+
+      var modal = document.getElementById("myModal");
+      
+      var btn = document.getElementById("btn-escrever");
+      
+      var span = document.getElementsByClassName("close")[0];
+      
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
+  
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
  
    
     </div>
