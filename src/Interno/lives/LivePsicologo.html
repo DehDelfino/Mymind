@@ -13,6 +13,7 @@
   
   <link rel="stylesheet" href="../../style.css">
   <link rel="stylesheet" href="./css/certo.css">
+  <link rel="stylesheet" href="./css/modal.css">
      
   <title>MyMind</title>
 </head>
@@ -105,8 +106,26 @@
 			</div>
 
        </div>
-       <a href="../perfis/psicologo/index.html"><button  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"  id="btn-voltar" class="btn-dados">  Voltar </button></a>
-    </main>
+       <button a id="delete"  class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"  class="profile__button" id="btn-voltar" class="btn-dados">  Sair </button>
+       <aside id="modal" class="modal">
+         <section class="modal__container">
+           <header class="modal__header">
+             <h2 class="modal__title">Tem certeza que quer continuar?</h2>
+           </header>
+           <section class="modal__content">
+             <p>Essa ação não poderá ser desfeita!</p>
+           </section>
+           <footer class="modal__footer">
+             <button class="modal__btn-cancel">
+               Cancelar
+             </button>
+             <a href="../paciente/CalendarioPaciente.html"><button class="modal__btn-delete">
+               Sair
+             </button></a>
+           </footer>    
+         </section>
+       </aside>
+      </main>
 
       
   </div>
@@ -132,6 +151,7 @@
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
    <script src="./js/scroll.js"></script>
    <script src="./js/camera.js"></script>
+   <script src="./js/modal.js"></script>
  
 </body>
 </html>
