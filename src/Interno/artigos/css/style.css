@@ -13,11 +13,14 @@ body{
 
 .div-publicar {
   
-    
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin-top: 20px;
     border-radius: 15px;
     box-shadow: 20px 10px 20px 2px rgb(50 50 50 / 50%);
-    margin-left: 25%;
-    width: 450px;
+    margin-left: 5%;
+    margin-right: 5%;
     transition: all 0.2s ease-out;
     height: 590px;
     font-size : 1vw;
@@ -68,7 +71,7 @@ body{
     border-radius: 15px;
     box-shadow: 20px 10px 20px 2px rgb(50 50 50 / 50%);
     margin-left: 25%;
-    margin-top:10px;
+    margin-top:25px;
     width: 35%;
     transition: all 0.2s ease-out;
     font-size : 1vw;
