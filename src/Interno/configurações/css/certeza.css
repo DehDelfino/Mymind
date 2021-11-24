@@ -22,6 +22,7 @@ body { font-family: Podkova; }
   max-width: 400px;
   border-radius: 6px;
   border: 1px solid rgb(0, 0, 0);
+ 
   
 }
 
@@ -95,3 +96,8 @@ text-align: center;
   
 }
 
+.testando-main{
+  background-color: #2359a3;
+  height: 100%;
+  
+}
