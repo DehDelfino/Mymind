@@ -80,4 +80,22 @@ border-radius: 5px;
 /* font-weight: bold; */
 
 }
+
+.mdl-layout__drawer .mdl-navigation .mdl-navigation__link{
+    color:black;
+}
+
+#sair{
+padding: 10px;
+border-radius: 10px;
+background-color: rgb(225, 14, 14);
+margin: 40px;
+color: white;
+text-align: center;
+
+}
+#sair:hover{
+    background-color: rgb(158, 14, 14);
+
+}
   

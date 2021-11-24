@@ -112,6 +112,22 @@ background-color : rgb(51, 49, 110);
   
 }
 #sair:hover{
-    background-color: rgb(158, 14, 14);
+  background-color: rgb(158, 14, 14);
 
+}
+
+.titulo-pagina{
+  padding:10px;
+  background-color: aliceblue;
+  color: #2359a3;
+  margin-left: 40%;
+  font-family: Podkova ;
+  border-radius: 5px;
+  /* font-weight: bold; */
+  
+}
+
+#aqui{
+  background-color: #c3dafa;
+  
 }
