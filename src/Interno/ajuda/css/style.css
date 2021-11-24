@@ -7,11 +7,26 @@
 }
 
 #per{
-    background-color: rgb(158, 215, 231);
-    border-radius:10px;
+  
+    border-radius:10%;
 }
 
 #Pergunta{
     font-size:20px;
     font-style: italic
+}
+
+iframe{
+    margin:20px;
+}
+
+#usuario{
+    margin-left:20%;
+    width: 150px;
+    height: 20px;
+   
+}
+
+.centralizado{
+    display: flex;
 }

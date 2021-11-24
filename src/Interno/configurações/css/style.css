@@ -36,6 +36,14 @@ main{
     padding: 0.4rem 1rem;
     margin-bottom: 3rem;
 }
+
+#delete:hover{
+    background-color: #cf0c0c;
+}
+
+.profile__button:hover{
+    background-color: rgb(94, 94, 126);
+}
 .profile__button:last-of-type{
     background: #ae0000;
 
